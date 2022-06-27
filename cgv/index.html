@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGV 메인페이지 리뉴얼</title>
+  <!-- css 파일 -->
+  <link rel="stylesheet" href="/cgv/css/style.css">
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="nav-logo">
+        <img src="/cgv/images/cgv-logo.png" alt="">                            
+      </div>
+      <div class="movie-menu">
+        <a href="#none">영화</a>
+        <a href="#none">예매</a>
+        <a href="#none">극장</a>
+        <a href="#none">이벤트</a>
+        <a href="#none">스토어</a>
+        <form>
+          <input type="text" name="" id="" placeholder="샹치">
+          <button><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+      <div class="user-menu">
+        <a href="#none">로그인</a>
+        <a href="#none">빠른예매</a>
+        <a class="myCGV" href="#none">마이CGV</a>
+        <div class="myCGV-menu">
+          <a href="#none">예매내역</a>
+          <a href="#none">구매내역</a>
+          <a href="#none">쿠폰함</a>
+          <a href="#none">포인트</a>
+          <a href="#none">마이클럽</a>
+        </div>
+    </div>
+    <div class="hamburgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="modal-gnb">
+        <div class="modal-items">
+          <div class="modal-item">
+            <span>영화</span>
+            <a href="#none">무비차트</a>
+            <a href="#none">현재상영장</a>
+            <a href="#none">상영예정작</a>
+            <a href="#none">HD 트레일러</a>
+            <a href="#none">무비파인더</a>
+          </div>
+          <div class="modal-item">
+            <span>예매</span>
+            <a href="#none">빠른예매</a>
+            <a href="#none">상영시간표</a>
+          </div>
+          <div class="modal-item">
+            <span>극장</span>
+            <a href="#none">전체극장</a>
+            <a href="#none">스페셜관</a>
+          </div>
+          <div class="modal-item">
+            <span>이벤트</span>
+            <a href="#none">진행중 이벤트</a>
+            <a href="#none">지난 이벤트</a>
+            <a href="#none">당첨자 발표</a>
+          </div>
+          <div class="modal-item">
+            <span>스토어</span>
+            <a href="#none">영화관람권</a>
+            <a href="#none">기프트카드</a>
+            <a href="#none">스낵/음료</a>
+            <a href="#none">플레이존</a>
+          </div>
+          <div class="modal-item">
+            <span>CGV 아트하우스</span>
+            <a href="#none">영화</a>
+            <a href="#none">상영시간표</a>
+            <a href="#none">톡프로그램</a>
+            <a href="#none">큐레이터</a>
+            <a href="#none">주문형극장 T.O.D</a>
+            <a href="#none">기획전/이벤트</a>
+          </div>
+        </div>
+        <div class="modal-items">
+          <div class="modal-item">
+            <span>제휴할인</span>
+            <a href="#none">신용카드</a>
+            <a href="#none">포인트</a>
+            <a href="#none">통신사</a>
+            <a href="#none">기타결제수단</a>
+          </div>
+          <div class="modal-item">
+            <span>고객센터</span>
+            <a href="#none">고객센터 홈</a>
+            <a href="#none">자주묻는질문</a>
+            <a href="#none">공지사항</a>
+            <a href="#none">1:1문의</a>
+            <a href="#none">단체/대관문의</a>
+            <a href="#none">분실물문의</a>
+          </div>
+          <div class="modal-item">
+            <span>회원서비스</span>
+            <a href="#none">로그인</a>
+            <a href="#none">회원가입</a>
+            <a href="#none">아이디/비밀번호찾기</a>
+            <a href="#none">회원약관</a>
+            <a href="#none">개인정보처리방침</a>
+          </div>
+          <div class="modal-item">
+            <span>회사소개</span>
+            <a href="#none">CGV 소개</a>
+            <a href="#none">윤리경영</a>
+            <a href="#none">IR</a>
+            <a href="#none">광고/제휴/출점문의</a>
+            <a href="#none">B2B관람권문의</a>
+            <a href="#none">CJ상품권문의</a>
+          </div>
+          <div class="modal-item">
+            <span>멤버십</span>
+            <a href="#none">VIP LOUNGE</a>
+            <a href="#none">CLUB 서비스</a>
+            <a href="#none">무비파인더</a>
+            <a href="#none">CGV 아트하우스</a>
+          </div>
+          <div class="modal-item">
+            <span>마이 CGV</span>
+            <a href="#none">예매내역</a>
+            <a href="#none">관람권/할인쿠폰</a>
+            <a href="#none">CJ ONE 포인트</a>
+            <a href="#none">내가 꾸민 포토티켓</a>
+            <a href="#none">이벤트 응모내역</a>
+            <a href="#none">나의 문의내역</a>
+            <a href="#none">회원정보</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="tab-inner">
+    <!-- 바로 이동 버튼과 연결됌 -->
+    <input type="radio" name="tabmenu" id="tab1" checked>
+    <input type="radio" name="tabmenu" id="tab2">
+    <input type="radio" name="tabmenu" id="tab3">
+    <input type="radio" name="tabmenu" id="tab4">
+    <input type="radio" name="tabmenu" id="tab5">
+    <input type="radio" name="tabmenu" id="tab6">
+    <input type="radio" name="autoslideplay" id="auto-slide-on" checked onchange="slide()">
+    <input type="radio" name="autoslideplay" id="auto-slide-off" onchange="stopslide()">
+
+    <!-- 이미지 탭  -->
+    <div class="tabs">
+      <!-- items가 넓은애  -->
+      <div class="items">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- 바로 이동 버튼 -->
+    <div class="btn">
+      <label id="l1" class="circle" for="tab1"></label>
+      <label id="l2" class="circle" for="tab2"></label>
+      <label id="l3" class="circle" for="tab3"></label>
+      <label id="l4" class="circle" for="tab4"></label>
+      <label id="l5" class="circle" for="tab5"></label>
+      <label id="l6" class="circle" for="tab6"></label>
+      <label class="autoslideplay" for="auto-slide-on">
+        <i class="fas fa-play"></i>
+      </label>
+      <label class="autoslideplay" for="auto-slide-off">
+        <i class="fas fa-stop"></i>
+      </label>
+    </div>
+    <!-- 화살표 버튼 -->
+    <div class="btn-prev" onclick="slidePrev(event);">
+      <div></div>
+    </div>
+    <div class="btn-next" onclick="slideNext(event);">
+      <div></div>
+    </div>
+  </div>
+  <div class="movie-chart-container">
+    <h1>박스오피스</h1>
+    <!-- Swiper -->
+    <div class="mc-outter">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div id="slide-img1" class="swiper-slide">
+            <div class="mc-thum">
+              <div class="mc-overlay">
+                <span>'텐 링즈’를 차지하는 자, 세상을 지배한다!<br><br>
+                  초인적인 능력을 가진 ‘텐 링즈’의 힘으로
+                  수세기 동안 어둠의 세상을 지배해 온 ‘웬우’
+                  '샹치’는 아버지 ‘웬우’ 밑에서 암살자로...
+                </span>
+                <a href="#none">예매하기</a>
+              </div>
+            </div>
+            <div class="mc-info">
+              <h5>샹치와 텐 링즈의 전설</h5>
+              <span>
+                예매율 <em>30.6%</em>
+                <i class="fas fa-egg"></i> <em>9.2</em>
+              </span>
+            </div>
+          </div>
+          <div id="slide-img2" class="swiper-slide">
+            <div class="mc-thum">
+              <div class="mc-overlay">
+                <span>
+                  배우 황정민 '인질'로 잡혔다! <br><br>
+                  평소와 똑같던 어느 새벽,
+                  서울 한복판에서 증거도, 목격자도 없이 대한민국 톱배우 '황정민'이 납치된다...</span>
+                <a href="#none">예매하기</a>
+              </div>
+            </div>
+            <div class="mc-info">
+              <h5>인질</h5>
+              <span>
+                예매율 <em>20.3%</em>
+                <i class="fas fa-egg"></i> <em>8.4</em>
+              </span>
+            </div>
+          </div>
+          <div id="slide-img3" class="swiper-slide">
+            <div class="mc-thum">
+              <div class="mc-overlay">
+                <span>
+                  내전으로 고립된 낯선 도시, 모가디슈. 지금부터 우리의 목표는 오로지 생존이다!<br><br>
+                  대한민국이 UN가입을 위해 동분서주하던 시기 1991년 소말리아의 수도 모가디슈에서는...</span>
+                <a href="#none">예매하기</a>
+              </div>
+            </div>
+            <div class="mc-info">
+              <h5>모가디슈</h5>
+              <span>
+                예매율 <em>14.5%</em>
+                <i class="fas fa-egg"></i> <em>7.8</em>
+              </span>
+            </div>
+          </div>
+          <div id="slide-img4" class="swiper-slide">
+            <div class="mc-thum">
+              <div class="mc-overlay">
+                <span>
+                  2021년, 음악의 마법에 빠질 시간! 가장 조용한 세상에서 시작된 여름의 노래! <br><br>24/7 함께 시간을 보내며 소리를 들을 수 없는 가족을 세상과 연결하는 코다 '루비'는...
+                </span>
+                <a href="#none">예매하기</a>
+              </div>
+            </div>
+            <div class="mc-info">
+              <h5>코다</h5>
+              <span>
+                예매율 <em>11.0%</em>
+                <i class="fas fa-egg"></i> <em>8.4</em>
+              </span>
+            </div>
+          </div>
+          <div id="slide-img5" class="swiper-slide">
+            <div class="mc-thum">
+              <div class="mc-overlay">
+                <span>
+                  사.상.초.유! 도심 속 초대형 재난 발생!<br><br>서울 입성과 함께 내 집 마련의 꿈을 이룬 가장 ‘동원(김성균)’이사 첫날부터 프로 참견러 ‘만수’(차승원)와 사사건건 부딪힌다...
+                </span>
+                <a href="#none">예매하기</a>
+              </div>
+            </div>
+            <div class="mc-info">
+              <h5>싱크홀</h5>
+              <span>
+                예매율 <em>4.8%</em>
+                <i class="fas fa-egg"></i> <em>9.1</em>
+              </span>
+            </div>
+          </div>
+          <div id="slide-img6" class="swiper-slide">
+            <div class="mc-thum">
+              <div class="mc-overlay">
+                <span>
+                  그때는 몰랐다 그게 우리의 최선이었다.<br><br>열여덟 ‘강이’, ‘아람’, ‘소영’. 더 나아지기 위해서 기꺼이 더 나빠졌던 우리의 이상했고 무서웠고 좋아했던 그 시절의 드라마
+                </span>
+                <a href="#none">예매하기</a>
+              </div>
+            </div>
+            <div class="mc-info">
+              <h5>최선의 삶</h5>
+              <span>
+                예매율 <em>3.7%</em>
+                <i class="fas fa-egg"></i> <em>7.8</em>
+              </span>
+            </div>
+          </div>
+          <div id="slide-img7" class="swiper-slide">
+            <div class="mc-thum">
+              <div class="mc-overlay">
+                <span>
+                  처음이었다, 사랑이 싹트는 기분 <br><br>너에게 풍덩 빠져버렸던 17살의 여름. 너를 두고 아무 것도 할 수 없었던 21살의 여름. 그리고 몇 번의 여름이 지나고 다시 만난 너,이젠 놓치지 않을 거야...
+                </span>
+                <a href="#none">예매하기</a>
+              </div>
+            </div>
+            <div class="mc-info">
+              <h5>여름날 우리</h5>
+              <span>
+                예매율 <em>3.3%</em>
+                <i class="fas fa-egg"></i> <em>8.2</em>
+              </span>
+            </div>
+          </div>
+          <div id="slide-img8" class="swiper-slide">
+            <div class="mc-thum">
+              <div class="mc-overlay">
+                <span>
+                  “내 안의 히어로가 깨어난다!”<br><br>평범한 직장, 절친 그리고 한 잔의 커피. 평화로운 일상 속 때론 총격전과 날강도가 나타나는 버라이어티한 ‘프리시티’에 살고 있는 ‘가이’...
+                </span>
+                <a href="#none">예매하기</a>
+              </div>
+            </div>
+            <div class="mc-info">
+              <h5>프리가이</h5>
+              <span>
+                예매율 <em>2.6%</em>
+                <i class="fas fa-egg"></i> <em>8.4</em>
+              </span>
+            </div>
+          </div>
+          <div id="slide-img9" class="swiper-slide">
+            <div class="mc-thum">
+              <div class="mc-overlay">
+                <span>
+                  2004년 첫 투자금 단돈 1천 달러 서비스 오픈 첫날 가입자수 650명 하버드대 학생들의 소규모 커뮤니티 코딩밖에 모르는 너드(Nerd) 마크 주커버그 VS 2021년 기업가치 1조 달러 돌파...
+                </span>
+                <a href="#none">예매하기</a>
+              </div>
+            </div>
+            <div class="mc-info">
+              <h5>소셜네트워크</h5>
+              <span>
+                예매율 <em>2.0%</em>
+                <i class="fas fa-egg"></i> <em>8.4</em>
+              </span>
+            </div>
+          </div>
+          <div id="slide-img10" class="swiper-slide">
+            <div class="mc-thum">
+              <div class="mc-overlay">
+                <span>
+                  p낭만극장 이용수칙] 체온 체크 문진표 작성 마스크 착용 필수… “그런데 에어컨은 왜 안 틀죠?” 이것이 진짜 재난이다! 극한의 습도가 엄습해온 어느 여름날...
+                </span>
+                <a href="#none">예매하기</a>
+              </div>
+            </div>
+            <div class="mc-info">
+              <h5>습도다소높음</h5>
+              <span>
+                예매율 <em>1.2%</em>
+                <i class="fas fa-egg"></i> <em>8.4</em>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+
+
+  </div>
+  <div class="special-theater-container">
+    <h1>스페셜관</h1>
+      <div class="st-items">
+        <div class="st-item"></div>
+        <div class="st-item"></div>
+        <div class="st-item"></div>
+        <div class="st-item"></div>
+        <div class="st-item"></div>
+        <div class="st-item"></div>
+        <span>스페셜관 더보기 <i class="fas fa-angle-right"></i></span>
+      </div>
+  </div>
+  <div class="benefit-container">
+    <h1>혜택</h1>
+    <div class="b-items">
+      <div class="b-item-1"></div>
+      <div class="b-item-2"></div>
+        <div class="b-item-3 swiper swiper-benefit">
+          <div class="swiper-wrapper">
+            <div id="b-img-1" class="swiper-slide"></div>
+            <div id="b-img-2" class="swiper-slide"></div>
+            <div id="b-img-3" class="swiper-slide"></div>
+            <div id="b-img-4" class="swiper-slide"></div>
+            <div id="b-img-5" class="swiper-slide"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      <div class="b-item-4"></div>
+      <span class="b-more">혜택 더보기 <i class="fas fa-angle-right"></i></span>
+    </div>
+  </div>
+  <div class="service-container">
+    <div class="s-items">
+      <div class="s-item">
+        <i class="far fa-gem" data-text="VIP라운지"></i>
+      </div>
+      <div class="s-item">
+        <i class="far fa-credit-card" data-text="할인카드안내"></i>
+      </div>
+      <div class="s-item">
+        <i class="fas fa-store" data-text="스토어"></i>
+      </div>
+      <div class="s-item">
+        <i class="fas fa-gifts" data-text="이벤트"></i>
+      </div>
+      <div class="s-item">
+        <i class="fas fa-users" data-text="CLUB"></i>
+      </div>
+    </div>
+  </div>
+  <div class="event-container">
+    <h1>이벤트</h1>
+    <div class="e-items">
+      <div class="e-item">
+        <img src="/cgv/images/event-01.jpg" alt="">
+        <span><em>CGV VIP EXPRESS</em><b>2021.09.01 ~ 2022.01.31</b></span>
+      </div>
+      <div class="e-item">
+        <img src="/cgv/images/event-02.jpg" alt="">
+        <span><em>CGV VIP EXPRESS</em><b>2021.09.01 ~ 2022.01.31</b></span>
+      </div>
+      <div class="e-item">
+        <img src="/cgv/images/event-03.jpg" alt="">
+        <span><em>CGV VIP EXPRESS</em><b>2021.09.01 ~ 2022.01.31</b></span>
+      </div>
+      <div class="e-item">
+        <img src="/cgv/images/event-04.jpg" alt="">
+        <span><em>CGV VIP EXPRESS</em><b>2021.09.01 ~ 2022.01.31</b></span>
+      </div>
+      <span class="e-more">이벤트 더보기 <i class="fas fa-angle-right"></i></span>
+    </div>
+  </div>
+  <div class="club-container">
+    <h1>CLUB</h1>
+    <div class="c-items">
+      <div class="c-item">
+        <img src="/cgv/images/club-1-1.jpg" alt="">
+        <img class="c-overlay" src="/cgv/images/club-1-2.png" alt="">
+        <span>1318 클럽</span>
+      </div>
+      <div class="c-item">
+        <img src="/cgv/images/club-2-1.jpg" alt="">
+        <img class="c-overlay" src="/cgv/images/club-2-2.png" alt="">
+        <span>커플링 클럽</span>
+      </div>
+      <div class="c-item">
+        <img src="/cgv/images/club-3-1.jpg" alt="">
+        <img class="c-overlay" src="/cgv/images/club-3-2.png" alt="">
+        <span>치어스 클럽</span>
+      </div>
+      <span class="c-more">클럽 더보기 <i class="fas fa-angle-right"></i></span>
+    </div>
+  </div>
+  <div class="notice-container">
+    <div class="n-outer">
+      <p>공지사항</p>
+      <div class="n-items">
+        <span>[기타] 22년 VIP 선정 기준 변경 및 추가 기준 관련 안내<em>2021.09.06</em></span>
+        <span>[극장] [CGV용산아이파크몰] IMAX, 4DX 상영관 좌석 거리두기 기준 변경 안내<em>2021.09.03</em></span>
+        <span>[시스템점검] 2021년 9월 시스템 점검 안내<em>2021.09.01</em></span>
+        <span>[극장] 문화가 있는 날 가격조정 안내<em>2021.08.29</em></span>
+        <span>[극장] [CGV용산아이파크몰] 수도권 사회적 거리두기 4단계-18시 이후 영화관 이용 안내<em>2021.08.17</em></span>
+        <span>[행사/이벤트] [CGV] 브레이브걸스 팬미팅 생중계 안내<em>2021.08.06</em></span>
+        <span>[극장] 수도권 사회적 거리두기 4단계 격상에 따른 영화관 이용 안내<em>2021.08.01</em></span>
+      </div>
+    </div>
+  </div>
+  <div class="banner-container">
+    <div class="banner"></div>
+  </div>
+  <footer>
+    <div class="f-items">
+      <div class="f-menus">
+        <a href="">회사소개</a>
+        <a href="">인재채용</a>
+        <a href="">제휴/광고문의</a>
+        <a href="">이용약관</a>
+        <a href="">개인정보처리방침</a>
+        <a href="">윤리경영</a>
+        <a href="">사이버감사실</a>
+        <a href="">사이트맵</a>
+      </div>
+      <div class="f-info">
+        <div class="f-logo"></div>
+        <div class="f-address">
+          <p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</p>
+          <p>
+            <span>대표이사 : 허민회</span>
+            <span>사업자등록번호 : 104-81-45690</span>
+            <span>통신판매업신고번호 : 2017-서울용산-0662</span>
+            <span>호스팅사업자 : CJ올리브네트웍스</span>
+            <span>개인정보보호 책임자 : 심준범</span>
+            <span>대표이메일 : cjcgvmaster@cj.net</span>
+            <span>CGV고객센터 : 1544-1122</span>
+          </p>
+        </div>
+        <div class="f-sns">
+          <span><i class="fab fa-facebook-f"></i></span>
+    		  <span><i class="fab fa-instagram"></i></span>
+    			<span><i class="fab fa-twitter"></i></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <script>
+    $(function () {
+
+      var chk = $('.items').css('margin-left');
+
+      // 첫번째 슬라이드면 이전버튼 감춤
+      if (chk == '0px') {
+        $('.btn-prev').addClass("hide");
+      } else {
+        $('.btn-prev').removeClass("hide");
+      }
+
+      // 자동 슬라이드 
+      slide();
+
+      // 햄버거버튼으로 메뉴모달 열렸다 닫혔다
+      $('.hamburgerBtn').click(function () {
+        $(this).toggleClass('active');
+        $('.modal-gnb').fadeToggle();
+        
+        // 모달 열렸을 땐 자동 슬라이드 멈춤 
+        if($(this).hasClass('active')) {
+          clearInterval(autoSlider);
+        } else {
+          slide();
+        }
+      });
+
+      // 스크롤하면 헤더 색상 검은색으로
+      const header = $("header");
+      $(window).scroll(function() {
+        if (window.scrollY > 100) {
+          header.css('background-color', 'black');
+      } else {
+        header.css('background-color', 'transparent');
+      }
+
+      });
+
+
+
+
+    });
+
+
+    var autoSlider = '';
+    var autoSliderNotice = '';
+
+    // 자동 슬라이드
+    function slide() {
+      autoSlider = setInterval(autoSlide, 5000);
+      autoSliderNotice = setInterval(autoSlideNotice, 3000);
+    }
+
+    // 자동 슬라이드 멈추기
+    function stopslide() {
+      clearInterval(autoSlider)
+    }
+
+
+    let count = 0;
+    let leftVal = $('.items').css('margin-left').substr(0, $('.items').css('margin-left').indexOf("%"));
+
+    // let slideWidth = $('.items div').width();
+    let slideWidth = 100;
+    let totalSlide = $('.items div').length - 1;
+
+
+    // 이전 슬라이드
+    let slidePrev = (e) => {
+
+      $('.btn-next').removeClass("hide");
+
+      if (count == 0) {
+        $(e.target).addClass("hide");
+      }
+      if (count != 0) {
+        $(e.target).removeClass("hide");
+        $('.items').css('margin-left', `${-(slideWidth * --count)}%`);
+      }
+
+      setTimeout(() => {
+        pagination(count)
+      }, 501);
+
+    }
+
+    // 다음 슬라이드 
+    let slideNext = (e) => {
+      $('.btn-prev').removeClass("hide");
+
+      if (count != totalSlide) {
+        $(e.target).removeClass("hide");
+        $('.items').css('margin-left', `${-(slideWidth * ++count)}%`);
+      }
+      if (count == totalSlide) {
+        $(e.target).addClass("hide");
+      }
+
+      setTimeout(() => {
+        pagination(count)
+      }, 501);
+
+    }
+
+
+    // 현재 슬라이드 위치 표시 
+    function pagination(counts) {
+
+      document.getElementById("tab1").checked = false;
+      document.getElementById("tab2").checked = false;
+      document.getElementById("tab3").checked = false;
+      document.getElementById("tab4").checked = false;
+      document.getElementById("tab5").checked = false;
+      document.getElementById("tab6").checked = false;
+
+      if (counts == 0) {
+        $('label[for=tab1]').addClass('active');
+        $('label[for=tab1]').siblings().removeClass('active');
+      } else if (counts == 1) {
+        $('label[for=tab2]').addClass('active');
+        $('label[for=tab2]').siblings().removeClass('active');
+      } else if (counts == 2) {
+        $('label[for=tab3]').addClass('active');
+        $('label[for=tab3]').siblings().removeClass('active');
+      } else if (counts == 3) {
+        $('label[for=tab4]').addClass('active');
+        $('label[for=tab4]').siblings().removeClass('active');
+      } else if (counts == 4) {
+        $('label[for=tab5]').addClass('active');
+        $('label[for=tab5]').siblings().removeClass('active');
+      } else if (counts == 5) {
+        $('label[for=tab6]').addClass('active');
+        $('label[for=tab6]').siblings().removeClass('active');
+      }
+
+    }
+
+    // label 클릭하면 active 클래스 삭제 
+    $('.circle').click((e) => {
+      $(e.target).removeClass("active");
+      $(e.target).siblings().removeClass("active");
+    });
+
+
+
+    // 자동 슬라이드 
+    function autoSlide() {
+      $('.btn-prev').removeClass("hide");
+
+      if (count != totalSlide) {
+        $('.items').css('margin-left', `${-(slideWidth * ++count)}%`);
+      } else if (count == totalSlide) {
+        count = 0;
+        $('.items').css('margin-left', `${-(slideWidth * count)}%`);
+      }
+      setTimeout(() => {
+        pagination(count)
+      }, 501);
+
+    }
+
+
+    // 자동슬라이드 되는 중간에 라벨 클릭해서 이동하기 ( css로 한먹어서 또 씀 )
+    $("#l1").on("click", () => {
+      $('.items').css('margin-left', `0%`);
+    });
+    $("#l2").on("click", () => {
+      $('.items').css('margin-left', `-100%`);
+    });
+    $("#l3").on("click", () => {
+      $('.items').css('margin-left', `-200%`);
+    });
+    $("#l4").on("click", () => {
+      $('.items').css('margin-left', `-300%`);
+    });
+    $("#l5").on("click", () => {
+      $('.items').css('margin-left', `-400%`);
+    });
+    $("#l6").on("click", () => {
+      $('.items').css('margin-left', `-500%`);
+    });
+
+
+
+
+    // swiper 사용
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var swiper2 = new Swiper(".swiper-benefit", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+    // 공지사항 자동 슬라이드 
+    let countN = 0;
+    let mtVal = $('.n-items').css('margin-top').substr(0, $('.n-items').css('margin-top').indexOf("px"));
+
+    let slideHeight = 50;
+    let totalNotice = $('.n-items span').length - 1;
+
+    function autoSlideNotice() {
+      if (countN != totalNotice) {
+        $('.n-items').css('margin-top', `${-(slideHeight * ++countN)}px`);
+      } else {
+        countN = 0;
+        $('.n-items').css('margin-top', `${-(slideHeight * countN)}px`);
+      }
+    }
+  </script>
+
+</body>
+
+</html>

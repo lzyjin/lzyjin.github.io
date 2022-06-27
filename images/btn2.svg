@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+  <g id="button" transform="translate(-1267 -67)">
+    <g id="Rechteck_71" data-name="Rechteck 71" transform="translate(1268 67)" fill="#b4b4b4" stroke="#6d6d6d" stroke-width="1">
+      <rect width="14" height="13" stroke="none"/>
+      <rect x="0.5" y="0.5" width="13" height="12" fill="none"/>
+    </g>
+    <rect id="Rechteck_72" data-name="Rechteck 72" width="1" height="13" transform="translate(1267 67)" fill="#fff"/>
+    <rect id="Rechteck_73" data-name="Rechteck 73" width="12" height="1" transform="translate(1269 68)" fill="#d8d8d8"/>
+    <rect id="Rechteck_74" data-name="Rechteck 74" width="16" height="1" transform="translate(1267 67)" fill="#fff"/>
+    <rect id="Rechteck_75" data-name="Rechteck 75" width="16" height="1" transform="translate(1267 80)"/>
+    <rect id="Rechteck_76" data-name="Rechteck 76" width="1" height="13" transform="translate(1282 68)"/>
+    <g id="Gruppe_87" data-name="Gruppe 87" transform="translate(18)">
+      <rect id="Rechteck_77" data-name="Rechteck 77" width="9" height="2" transform="translate(1252 69)"/>
+      <rect id="Rechteck_78" data-name="Rechteck 78" width="1" height="7" transform="translate(1252 71)"/>
+      <rect id="Rechteck_79" data-name="Rechteck 79" width="1" height="9" transform="translate(1261 77) rotate(90)"/>
+      <rect id="Rechteck_80" data-name="Rechteck 80" width="1" height="7" transform="translate(1260 71)"/>
+    </g>
+  </g>
+</svg>

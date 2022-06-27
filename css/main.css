@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+	background-color: white;
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.5em;
+	margin: 0;
+	height: 100vh;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+nav li a {
+	/* color: #fff !important; */
+	color: #bbb !important;
+}
+
+nav li a:hover,
+nav li>a.active {
+	color: #000 !important;
+}
+
+main {
+	scroll-snap-type: y mandatory;
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+
+}
+
+section {
+	/* border: 1px solid red; */
+	padding: 50px;
+	scroll-snap-align: start;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+section:nth-of-type(1),
+nav {
+	background-color: #fff;
+}
+
+section:nth-of-type(2) {
+	background-color: #fff;
+}
+
+section:nth-of-type(3) {
+	background-color: #fff;
+}
+
+section:nth-of-type(4) {
+	background-color: #fff;
+}
+
+section:nth-of-type(5) {
+	background-color: #fff;
+}
+
+.ms-auto {
+	margin-left: auto !important;
+}
+
+#mainNav button {
+	border: none;
+}
+
+.intro-body {
+	min-height: 300px;
+	padding-top: 250px;
+	padding-bottom: 260px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.intro-body .typing {
+  z-index: 999;
+}
+
+.intro-body .typing {
+	font-weight: 500;
+	font-size: 30px;
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.profile-body {}
+
+.profile-body video {
+	width: 400px;
+	height: 450px;
+	display: flex;
+	justify-content: space-around;
+	box-shadow: 0 0 20px #ddd;
+	border-radius: 10px;
+}
+
+.profile-body>div {
+	display: inline-block;
+}
+
+.profile-body>div:nth-child(1) {
+	background-color: rgb(228, 228, 228);
+	width: 400px;
+	height: fit-content;
+	text-align: center;
+}
+
+.profile-body>div:nth-child(1) p {
+	margin-bottom: 50px;
+}
+
+@media screen and (min-width : 1009px) {
+	.profile-body>div:nth-child(2) {
+		margin-left: 70px;
+	}
+}
+
+#about h3 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.profile-body .about-detail {
+	margin-bottom: 30px;
+	/* color: #777; */
+}
+
+.profile-body p {
+	margin: 10px;
+	padding: 0;
+}
+
+.skill-body {
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+}
+
+#skill,
+#about,
+#portfolio, 
+#contact {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#skill h3 {
+	/* color: #fff; */
+	color: #000;
+	text-align: center;
+}
+
+#portfolio h3,
+#contact h3 {
+	text-align: center;
+}
+
+.work-body {
+	display: flex;
+	justify-content: space-around;
+	padding: 50px;
+}
+
+/*----------------------------------------------------*/
+
+#contact {}
+
+#contact h3 {
+	/* color: #fff; */
+	color: #000;
+}
+
+.contact-body {
+	width: 500px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.contact-body input, .contact-body textarea {
+	margin: 20px;
+}
+.contact-body input[type=button] {
+	border: 1px solid #ccc;
+}
+
+.contact-body input:focus::placeholder,
+.contact-body textarea:focus::placeholder {
+  visibility: hidden;
+}
+
+/*----------------------------------------------------*/
+
+footer {
+	height: 50px;
+	background-color: #fff;
+}

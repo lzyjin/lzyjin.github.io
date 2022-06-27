@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Netflix English Ver - clone</title>
+	<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="logo">
+				<img src="./images/Netflix_Logo.png" alt="">
+			</div>
+			<div class="signin">
+				<button>sign in</button>
+			</div>
+		</header>
+		<section class="welcome">
+			<div class="heading">
+				<h1>Unlimited movies, TV shows, and more.</h1>
+				<h5>Watch anywhere. Cancel anytime.</h5>
+				<p>
+					Ready to watch? Enter your email to create or restart your membership.
+				</p>
+				<div class="getStarted">
+					<input type="email">
+					<span>Email address</span>
+					<button>Get Started <i class="xi-angle-right"></i></button>
+				</div>
+			</div>
+		</section>
+		<section class="enjoy">
+			<div class="inner">
+				<div class="desc">
+					<h2>Enjoy on your TV.</h2>
+					<p>
+						Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+					</p>
+				</div>
+				<div class="preview enjoy">
+					<img src="./images/tv.png" alt="">
+					<div class="enjoy-video">
+						<video src="./images/enjoy-video.m4v" autoplay loop muted></video>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="download">
+			<div class="inner">
+				<div class="desc">
+					<h2>Download your shows to watch offline.</h2>
+					<p>
+						Save your favorites easily and always have something to watch.
+					</p>
+				</div>
+				<div class="preview">
+					<img src="./images/mobile.png" alt="">
+				</div>
+			</div>
+		</section>
+		<section class="watch">
+			<div class="inner">
+				<div class="desc">
+					<h2>Watch everywhere.</h2>
+					<p>
+						Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.
+					</p>
+				</div>
+				<div class="preview watch">
+					<img src="./images/device-pile.png" alt="">
+					<div class="watch-video">
+						<video src="./images/watch-video.m4v" autoplay loop muted></video>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="create">
+			<div class="inner">
+				<div class="desc">
+					<h2>Create profiles for kids.</h2>
+					<p>
+						Send kids on adventures with their favorite characters in a space made just for them—free with your
+						membership.
+					</p>
+				</div>
+				<div class="preview">
+					<img src="./images/kids.png" alt="">
+				</div>
+			</div>
+		</section>
+		<section class="faq">
+			<div class="faq-inner">
+				<h1>Frequently Asked Questions</h1>
+				<article class="accordion">
+					<input type="radio" name="faq-item" id="faq1">
+					<label for="faq1">What is Netflix?</label>
+					<div class="faq-content">
+						Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+						documentaries, and more on thousands of internet-connected devices.
+						<br><br>
+						You can watch as much as you want, whenever you want without a single commercial – all for one low monthly
+						price. There's always something new to discover and new TV shows and movies are added every week!
+					</div>
+					<input type="radio" name="faq-item" id="faq2">
+					<label for="faq2">
+						How much does Netflix cost?
+					</label>
+					<div class="faq-content">
+						Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly
+						fee. Plans range from KRW9,500 to KRW14,500 a month. No extra costs, no contracts.
+					</div>
+					<input type="radio" name="faq-item" id="faq3">
+					<label for="faq3">Where can I watch?</label>
+					<div class="faq-content">
+						Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch
+						instantly on the web at netflix.com from your personal computer or on any internet-connected device that
+						offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game
+						consoles.
+						<br><br>
+						You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch
+						while you're on the go and without an internet connection. Take Netflix with you anywhere.
+					</div>
+					<input type="radio" name="faq-item" id="faq4">
+					<label for="faq4">How do I cancel?</label>
+					<div class="faq-content">
+						Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account
+						online in two clicks. There are no cancellation fees – start or stop your account anytime.
+					</div>
+					<input type="radio" name="faq-item" id="faq5">
+					<label for="faq5">What can I watch on Netflix?</label>
+					<div class="faq-content">
+						Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix
+						originals, and more. Watch as much as you want, anytime you want.
+					</div>
+					<input type="radio" name="faq-item" id="faq6">
+					<label for="faq6">Is Netflix good for kids?</label>
+					<div class="faq-content">
+						The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+						family-friendly TV shows and movies in their own space.
+						<br><br>
+						Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content
+						kids can watch and block specific titles you don’t want kids to see.
+					</div>
+				</article>
+				<aside>
+					<p>
+						Ready to watch? Enter your email to create or restart your membership.
+					</p>
+					<div class="getStarted">
+						<input type="email">
+						<span>Email address</span>
+						<button>Get Started <i class="xi-angle-right"></i></button>
+					</div>
+				</aside>
+			</div>
+		</section>
+		<footer>
+			<div class="footer-inner">
+				<div class="sitemap">
+					<h6>
+						Questions? Call
+						<a href="#none">080-001-9588</a>
+					</h6>
+					<div class="links">
+						<div class="items">
+							<a href="#none">FAQ</a>
+							<a href="#none">Investor Relations</a>
+							<a href="#none">Privacy</a>
+							<a href="#none">Speed Test</a>
+						</div>
+						<div class="items">
+							<a href="#none">Help Center</a>
+							<a href="#none">Jobs</a>
+							<a href="#none">Cookie Preferences</a>
+							<a href="#none">Legal Notices</a>
+						</div>
+						<div class="items">
+							<a href="#none">Account</a>
+							<a href="#none">Ways to Watch</a>
+							<a href="#none">Corporate Information</a>
+							<a href="#none">Only on Netflix</a>
+						</div>
+						<div class="items">
+							<a href="#none">Media Center</a>
+							<a href="#none">Terms of Use</a>
+							<a href="#none">Contact Us</a>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<p>Netflix South Korea</p>
+					<span>
+						Netflix Services Korea Ltd. E-Commerce Registration Number: Je 2018-Seoul Jong-ro-0426 Ho. <br>
+						Phone: 080-001-9588<br>
+						Representative: Reginald Shawn Thompson<br>
+						Email: korea@netflix.com<br>
+						Address: 20F, Tower A, Centropolis Building 26, Ujeongguk-ro, Jongno-gu, Seoul, 03161 <br>
+						Republic of Korea<br>
+						Business registration number: 165-87-00119<br>
+						Hosted by: Amazon Web Services Inc.<br>
+						KFTC website<br>
+					</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="modal-login">
+		<div class="login">
+			<i class="xi-close-thin btn-modal-close"></i>
+			<h1>Sign In</h1>
+			<form>
+				<div class="input-field">
+					<input type="text">
+					<span>Email or phone number</span>
+				</div>
+				<div class="input-field">
+					<input type="password">
+					<span>Password</span>
+				</div>
+				<input type="submit" class="btn-signin" value="Sign In"></input>
+			</form>
+			<div class="save-help">
+				<label><input type="checkbox" name="" id="">Remember me</label>
+				<a href="#none">Need help?</a>
+			</div>
+
+			<div class="info-more">
+				<span>
+						<!-- <i class="xi-facebook-official"></i> -->
+						<em></em>
+						Login with Facebook
+				</span>
+				<span>
+					New to Netflix?
+					<a href="#none" class="btn-signup">Sign up now.</a>
+				</span>
+				<span>
+					This page is protected by Google reCAPTCHA to ensure you're not a bot.
+					<a href="#none">Learn more.</a>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$('.signin').click(function () {
+			$('.modal-login').fadeIn();
+			$('body').addClass('active');
+		});
+		$('.btn-modal-close').click(function () {
+			$('.modal-login').fadeOut();
+			$('body').removeClass('active');
+		});
+	</script>
+</body>
+
+</html>

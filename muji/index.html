@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MUJI</title>
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/muji/css/style.css">
+    <link rel="stylesheet" href="/muji/css/slideshow.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<div class="header">
+			<!-- 로고이미지 -->
+			<img src="/muji/images/muji-logo.png" alt="">
+			<!-- 검색창 -->
+			<form>
+				<input type="text" placeholder="원하는 상품을 검색하세요!">
+				<button><i class="fas fa-search"></i></button>
+			</form>
+			<!-- 로그인 -->
+			<span>
+				<em>로그인</em>
+				<em>회원가입</em>
+				<em>고객센터</em>
+			</span>
+		</div>
+
+		<nav>
+			<div class="mainMenu">
+
+				<div id='navi'>
+					<ul>
+
+						<li class="">
+							<a href href="#">NEW</a>
+						</li>
+
+						<li class="active">
+							<a href href="#">문구</a>
+							<ul>
+								<li><a href="#">노트</a></li>
+								<li><a href="#">필기구</a></li>
+								<li><a href="#">파일</a></li>
+								<li><a href="#">사무용품</a></li>
+								<li><a href="#">커뮤니케이션</a></li>
+								<li><a href="#">완구</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#">가구</a>
+							<ul>
+								<li><a href="#">침대·매트리스</a></li>
+								<li><a href="#">소파·리빙가구</a></li>
+								<li><a href="#">데스크</a></li>
+								<li><a href="#">수납가구</a></li>
+								<li><a href="#">데코·벽걸이가구</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#">생활용품</a>
+							<ul>
+								<li><a href="#">하우스키핑용품</a></li>
+								<li><a href="#">욕실용품</a></li>
+								<li><a href="#">정리용품</a></li>
+								<li><a href="#">부엌용품</a></li>
+								<li><a href="#">테이블용품</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#">의류</a>
+							<ul>
+								<li><a href="#">MUJI LABO</a></li>
+								<li><a href="#">여성복</a></li>
+								<li><a href="#">남성복</a></li>
+								<li><a href="#">아동복</a></li>
+								<li><a href="#">이너웨어</a></li>
+								<li><a href="#">가방·신발</a></li>
+								<li><a href="#">액세서리·양말·우산</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#">헬스&뷰티</a>
+							<ul>
+								<li><a href="#">아로마·향수</a></li>
+								<li><a href="#">스킨케어</a></li>
+								<li><a href="#">헤어</a></li>
+								<li><a href="#">메이크업</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<i class="fas fa-shopping-bag" style="color: #fff;"></i>
+						</li>
+
+						<li style="padding: 0;">
+							<input id="trigger" type="checkbox">
+							<label for="trigger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</label>
+						</li>
+
+					</ul>
+				</div>
+
+			</div> <!-- mainmenu -->
+
+			<div class="menu">
+				<ul>
+					<label for="">문구</label>
+					<li>노트</li>
+					<li>필기구</li>
+					<li>파일</li>
+					<li>사무용품</li>
+					<li>커뮤니케이션</li>
+					<li>완구</li>
+				</ul>
+				<ul>
+					<label for="">가구</label>
+					<li>침대·매트리스</li>
+					<li>소파·리빙가구</li>
+					<li>데스크</li>
+					<li>수납가구</li>
+					<li>데코·벽걸이가구</li>
+				</ul>
+				<ul>
+					<label for="">생활용품</label>
+					<li>하우스키핑 용품</li>
+					<li>욕실 화장실 용품</li>
+					<li>정리용품</li>
+					<li>부엌용품</li>
+					<li>테이블용품</li>
+				</ul>
+				<ul>
+					<label for="">의류</label>
+					<li>MUJI LABO</li>
+					<li>여성복</li>
+					<li>남성복</li>
+					<li>아동복</li>
+					<li>이너웨어</li>
+					<li>가방·신발</li>
+					<li>액세서리·양말·우산</li>
+				</ul>
+				<ul>
+					<label for="">헬스&뷰티</label>
+					<li>아로마·향수</li>
+					<li>스킨케어</li>
+					<li>헤어</li>
+					<li>메이크업</li>
+				</ul>
+				<ul>
+					<label for="">My Page</label>
+					<li>장바구니</li>
+					<li>주문 / 배송</li>
+				</ul>
+				<ul>
+					<label for="">고객지원</label>
+					<li>공지사항</li>
+					<li>자주 묻는 질문</li>
+				</ul>
+				<ul>
+					<label for="">전국매장안내</label>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<div class="tab-inner">
+
+		<input type="radio" name="tabmenu" id="tab1" checked>
+		<input type="radio" name="tabmenu" id="tab2">
+		<input type="radio" name="tabmenu" id="tab3">
+
+		<div class="tabs">
+			<div class="items">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+
+		<div class="btn">
+			<label for="tab1"></label>
+			<label for="tab2"></label>
+			<label for="tab3"></label>
+		</div>
+
+
+	</div>
+
+	<section class="recommand-container">
+		<h3>추천상품</h3>
+		<div>
+			<div class="product">
+				<div>
+					<img src="/muji/images/aroma.jpg" alt="">
+				</div>
+				<div>
+					<span><em>에센셜오일-라벤더</em>11,900원</span>
+				</div>
+			</div>
+			<div class="product">
+				<div>
+					<img src="/muji/images/cdp.jpg" alt="">
+				</div>
+				<div>
+					<span><em>벽걸이형 CD 플레이어</em>199,000원</span>
+				</div>
+			</div>
+			<div class="product">
+				<div>
+					<img src="/muji/images/doldol.jpg" alt="">
+				</div>
+				<div>
+					<span><em>카페트 클리너</em>5,900원</span>
+				</div>
+			</div>
+			<div class="product">
+				<div>
+					<img src="/muji/images/tray.jpg" alt="">
+				</div>
+				<div>
+					<span><em>트레이ㆍ각형ㆍ27x19x2cm</em>14,900원</span>
+				</div>
+			</div>
+	</section>
+
+	<section class="sale-container">
+		<h3>할인상품</h3>
+		<div>
+			<div class="sale">
+				<div>
+					<img src="/muji/images/sale-1.jpg" alt="">
+					<img src="/muji/images/sale-2.jpg" alt="">
+				</div>
+				<div>
+					<div>SALE</div>
+					<div>
+						<em>의류 | 여성복</em>
+						<!-- <b>11,900원</b> -->
+					</div>
+				</div>
+			</div>
+			<div class="sale">
+				<div>
+					<img src="/muji/images/sale-3.jpg" alt="">
+					<img src="/muji/images/sale4.jpg" alt="">
+				</div>
+				<div>
+					<div>SALE</div>
+					<div>
+						<em>의류 | 남성복</em>
+						<!-- <b>11,900원</b> -->
+					</div>
+				</div>
+			</div>
+			<div class="sale">
+				<div>
+					<img src="/muji/images/sale-5.jpg" alt="">
+					<img src="/muji/images/sale-6.jpg" alt="">
+				</div>
+				<div>
+					<div>SALE</div>
+					<div>
+						<em>가전제품</em>
+						<!-- <b>11,900원</b> -->
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="point1-container">
+
+		<div class="point-outter">
+
+			<div class="point-img">
+			</div>
+
+			<div class="point-desc">
+				<div class="desc-heading">
+					<h1>키가 작은 가구가 주는 안락함</h1>
+					<p>
+						눈높이보다 낮은 가구로 일상생활을 보다 쾌적하고 안락하게. <br>
+						무인양품의 가구를 만나보세요.
+					</p>
+					<span>보러가기 →</span>
+				</div>
+
+				<div class="desc-items">
+					<div class="desc-item">
+						<img src="/muji/images/point-item3.jpg" alt="">
+						<div>
+							<p>무료배송</p>
+							<h1>수납 선반 세트ㆍ5단ㆍ2열 떡갈나무</h1>
+							<b>539,000원</b>
+						</div>
+					</div>
+					<div class="desc-item">
+						<img src="/muji/images/point-item2.jpg" alt="">
+						<div>
+							<p>무료배송</p>
+							<h1>푹신 소파</h1>
+							<b>69,000원</b>
+							<span>5 컬러</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+	<section class="point2-container">
+
+		<div class="point-outter">
+
+			<div class="point-desc">
+				<div class="desc-heading">
+					<h1>생활공간 속 맞춤 수납</h1>
+					<p>
+						자유롭게 조합하여 적층이 가능한 수납 시리즈.<br>
+						기분 좋은 생활을 위한 조합 좋은 공간을 만들어보세요.
+					</p>
+					<span>보러가기 →</span>
+				</div>
+
+				<div class="desc-items">
+					<div class="desc-item">
+						<img src="/muji/images/point-item4.jpg" alt="">
+						<div>
+							<p>인기</p>
+							<h1>폴리에틸렌 케이스 - L</h1>
+							<b>9,900원</b>
+						</div>
+					</div>
+					<div class="desc-item">
+						<img src="/muji/images/point-item5.jpg" alt="">
+						<div>
+							<p>인기</p>
+							<h1>스탠드 파일박스·A4용·화이트그레이</h1>
+							<b>5,900원</b>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="point-img">
+			</div>
+
+		</div>
+
+	</section>
+	<section class="mujilife-container">
+		<h3>무인양품의 지속가능한 생활</h3>
+		<div>
+
+			<div class="product">
+				<div>
+					<img src="/muji/images/life1.jpg" alt="">
+				</div>
+				<div>
+					<p>부품 교체로 오래오래 사용하기</p>
+				</div>
+			</div>
+			<div class="product">
+				<div>
+					<img src="/muji/images/life2.jpg" alt="">
+				</div>
+				<div>
+					<p>무인양품의 '마이 백'</p>
+				</div>
+			</div>
+			<div class="product">
+				<div>
+					<img src="/muji/images/life3.jpg" alt="">
+				</div>
+				<div>
+					<p>플라스틱 패키지 줄이기</p>
+				</div>
+			</div>
+			<div class="product">
+				<div>
+					<img src="/muji/images/life4.jpg" alt="">
+				</div>
+				<div>
+					<p>환경과 사람을 생각한 소재</p>
+				</div>
+			</div>
+			<div class="product">
+				<div>
+					<img src="/muji/images/life8.jpg" alt="">
+				</div>
+				<div>
+					<p>세계 속 '이동 판매 버스'</p>
+				</div>
+			</div>
+			<div class="product">
+				<div>
+					<img src="/muji/images/life6.jpg" alt="">
+				</div>
+				<div>
+					<p>다회용품 사용하기</p>
+				</div>
+			</div>
+			<div class="product">
+				<div>
+					<img src="/muji/images/life7.jpg" alt="">
+				</div>
+				<div>
+					<p>종이 소재의 매장 진열용 자재</p>
+				</div>
+			</div>
+			<div class="product">
+				<div>
+					<img src="/muji/images/life5.jpg" alt="">
+				</div>
+				<div>
+					<p>대나무로 만든 티슈, 페이퍼</p>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="footer-logo">
+			<img src="/muji/images/muji-white.png" alt="">
+			<div>
+				<span><i class="fab fa-facebook-f"></i></span>
+				<span><i class="fab fa-instagram"></i></span>
+				<span><i class="fab fa-twitter"></i></span>
+				<span><i class="fab fa-youtube"></i></span>
+			</div>
+		</div>
+		<div class="footer-menus">
+			<div>
+				<span>About MUJI</span>
+				<span>채용정보</span>
+				<span>사이트맵</span>
+				<span>고객센터</span>
+			</div>
+			<div>
+				<span>이용약관</span>
+				<span>쇼핑몰 이용안내</span>
+				<span>개인정보처리방침</span>
+				<span>전국 매장 정보</span>
+			</div>
+		</div>
+	</footer>
+</body>
+
+<script>
+	$(document).ready(function () {
+
+		$("#trigger").click((e) => {
+				let checkFlag = $('#trigger').is(':checked');
+				if (checkFlag) {
+					// alert("checked")
+
+					$(".menu").css({
+						// "display": "flex",
+						// "position": "fixed",
+						// "z-index": "999"
+
+						"display": "flex",
+						"justify-content": "space-around",
+						"align-items" : "flex-start",
+						"position": "absolute",
+						"top": "51px",
+						"left": "0",
+						"z-index": "999",
+						"flex-wrap" : "wrap"
+
+
+						// "position": "absolute",
+						// "top": "51px",
+						// "left": "0",
+						// "z-index": "999",
+						// "display": "block"
+					});
+
+				} else {
+					$(".menu").css({
+						"display": "none"
+					});
+				}
+			}
+
+		);
+	});
+
+	// $(".dropdown").hover( (e) => {
+	//   $(".dropdown-submenu").toggleClass("showDropMenu");
+	// } );
+</script>
+
+</html>
