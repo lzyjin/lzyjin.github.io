@@ -1,0 +1,98 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+//font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+
+@font-face {
+  font-family: Goldplay;
+  src: url(../font/GoldplayAlt-Bold.ttf) format('truetype');
+  font-width: 900;
+}
+
+$background: #FBF4E4;
+$red: #F43A01;
+
+html {
+
+}
+body {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif', 돋움, Dotum, 굴림, Gulim, Verdana, Arial, sans-serif;
+  background: $background;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+header {}
+main {
+  section {
+    border: 1px solid #000;
+    &.slide {
+      padding-top: 15vw;
+      .box {
+        max-width: 1400px;
+        margin: 0 auto;
+        border: 1px solid green;
+        position: relative;
+        .text-wrap {
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 5;
+          .text {
+            font-size: 120px;
+            font-family: Goldplay;
+            line-height: 1;
+            &.filled {
+              color: $red;
+            }
+            &.blank {
+              color: transparent;
+              -webkit-text-stroke: 2px red;
+            }
+          }
+        }
+        .swiper {
+          margin-top: 10vw;
+          overflow: visible;
+          .swiper-slide {
+            img {
+              width: 1000px;
+              height: auto;
+            }
+          }
+          .swiper-pagination {
+            left: 5%;
+            top: -20%;
+            bottom: auto;
+            width: fit-content;
+            .swiper-pagination-bullet {
+              background: $red;
+              width: 10px;
+              height: 10px;
+              margin: 0 8px;
+            }
+          }
+          .swiper-text-wrap {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 5;
+            .swiper-text {
+              display: none;
+              color: $red;
+              .content {
+
+              }
+              .link {
+                font-weight: 700;
+              }
+              &.active {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+footer {}
