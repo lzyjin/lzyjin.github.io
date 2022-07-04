@@ -6,9 +6,19 @@
   src: url(../font/GoldplayAlt-Bold.ttf) format('truetype');
   font-width: 900;
 }
+@font-face {
+  font-family: HGGGOTHICSSI80G;
+  src: url(../font/HGGGOTHICSSI80G.TTF) format('truetype');
+}
+@font-face {
+  font-family: CooperBlackStd;
+  src: url(../font/CooperBlackStd.woff2) format('woff');
+}
+
 
 $background: #FBF4E4;
-$red: #F43A01;
+$tomato: #F43A01;
+$navy: #2a31a0;
 
 html {
 
@@ -16,8 +26,8 @@ html {
 body {
   font-family: 'Spoqa Han Sans Neo', 'sans-serif', 돋움, Dotum, 굴림, Gulim, Verdana, Arial, sans-serif;
   background: $background;
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 20px;
+  line-height: 1.5;
   font-weight: 400;
 }
 
@@ -26,23 +36,23 @@ main {
   section {
     border: 1px solid #000;
     &.slide {
-      padding-top: 15vw;
+      padding-top: 12vw;
+      padding-bottom: 10vw;
       .box {
         max-width: 1400px;
         margin: 0 auto;
-        border: 1px solid green;
         position: relative;
         .text-wrap {
           position: absolute;
           right: 0;
-          top: 0;
+          top: -27%;
           z-index: 5;
           .text {
             font-size: 120px;
             font-family: Goldplay;
             line-height: 1;
             &.filled {
-              color: $red;
+              color: $tomato;
             }
             &.blank {
               color: transparent;
@@ -51,7 +61,7 @@ main {
           }
         }
         .swiper {
-          margin-top: 10vw;
+          margin-top: 13vw;
           overflow: visible;
           .swiper-slide {
             img {
@@ -61,11 +71,11 @@ main {
           }
           .swiper-pagination {
             left: 5%;
-            top: -20%;
+            top: -15%;
             bottom: auto;
             width: fit-content;
             .swiper-pagination-bullet {
-              background: $red;
+              background: $tomato;
               width: 10px;
               height: 10px;
               margin: 0 8px;
@@ -73,17 +83,18 @@ main {
           }
           .swiper-text-wrap {
             position: absolute;
-            left: 0;
-            top: 0;
+            left: 5%;
+            top: -7%;
             z-index: 5;
             .swiper-text {
               display: none;
-              color: $red;
+              color: $tomato;
               .content {
-
+                margin-bottom: 30px;
               }
               .link {
                 font-weight: 700;
+                border-bottom: 2px solid $tomato;
               }
               &.active {
                 display: block;
@@ -93,6 +104,183 @@ main {
         }
       }
     }
+    &.phrases {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .text {
+        max-width: 1600px;
+        margin: 0 auto;
+        z-index: 1;
+        .sub-title {
+          font-family: HGGGOTHICSSI80G;
+          color: $tomato;
+          text-align: center;
+          font-size: 35px;
+          margin-bottom: 40px;
+          font-weight: 500;
+        }
+        .title {
+          font-family: CooperBlackStd;
+          color: $tomato;
+          text-align: center;
+          font-size: 120px;
+          line-height: 1.05;
+          margin-bottom: 50px;
+        }
+        .content {
+          color: $tomato;
+          text-align: center;
+        }
+      }
+      .dot {
+        position: absolute;
+        &.dot-1 {
+          right: -50px;
+          top: 50px;
+          img {
+            width: 450px;
+            height: auto;
+          }
+        }
+        &.dot-2 {
+          left: -10px;
+          bottom: 10%;
+          img {
+            width: 300px;
+            height: auto;
+          }
+        }
+        &.dot-3 {
+          left: 15%;
+          bottom: 0;
+          img {
+            width: 80px;
+            height: auto;
+          }
+        }
+      }
+    }
+    &.drawing {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .text {
+        max-width: 900px;
+        margin: 0 auto;
+        z-index: 1;
+        transform: translateY(-50%);
+        .sub-title {
+          font-family: HGGGOTHICSSI80G;
+          color: $navy;
+          text-align: center;
+          font-size: 35px;
+          margin-bottom: 50px;
+          font-weight: 500;
+          .italic {
+            transform: translateY(5px);
+          }
+        }
+        .title {
+          font-family: HGGGOTHICSSI80G;
+          color: $navy;
+          text-align: center;
+          font-size: 70px;
+          line-height: 1.4;
+          margin-bottom: 50px;
+          font-weight: 500;
+        }
+      }
+      .bg {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+    &.playground {
+      position: relative;
+      height: 100vh;
+      .text {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10vw;
+        z-index: 1;
+        .title {
+          font-family: HGGGOTHICSSI80G;
+          color: $tomato;
+          text-align: center;
+          font-size: 70px;
+          line-height: 1.4;
+          margin-bottom: 50px;
+          font-weight: 500;
+        }
+        .content {
+          color: $tomato;
+          text-align: center;
+        }
+      }
+      .block {
+        position: absolute;
+        .photo-wrap {
+          overflow: hidden;
+          .photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+          }
+        }
+        .line {
+          position: absolute;
+        }
+        &.block-square {
+          left: 0;
+          top: 0;
+          .photo-wrap {
+            width: 400px;
+            height: 400px;
+          }
+          .line {
+            right: -10px;
+            bottom: -10px;
+          }
+        }
+        &.block-circle {
+          right: 0;
+          top: 0;
+          .photo-wrap {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+          }
+          .line {
+            left: -5px;
+            bottom: -15px;
+          }
+        }
+        &.block-house {
+          left: 50%;
+          bottom: 0;
+          .photo-wrap {
+            width: 500px;
+            height: 400px;
+          }
+          .line {
+            left: -5px;
+            bottom: 10px;
+          }
+        }
+      }
+    }
   }
+
 }
 footer {}
