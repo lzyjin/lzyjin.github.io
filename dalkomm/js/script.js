@@ -28,6 +28,24 @@ swiper.on('slideChange', function (swiper) {
 });
 
 
+// header hover effect -----------
+const gnbItems = document.querySelectorAll('.gnb-item');
+const lnbBg = document.querySelector('.lnb-bg');
+
+gnbItems.forEach((v, i, arr) => {
+    v.addEventListener('mouseenter', () => {
+        v.classList.add('active');
+        lnbBg.classList.add('active');
+    });
+    v.addEventListener('mouseleave', () => {
+        v.classList.remove('active');
+        lnbBg.classList.remove('active');
+    });
+});
+
+
+
+
 // mouse move effect -----------
 window.addEventListener('mousemove', (e) => {
     const standardX = window.innerWidth / 2 - e.clientX;
@@ -59,5 +77,4 @@ blockLines.forEach(v => {
 // document.querySelector('.playground .block-square .line').style.strokeDasharray = block1DashOffset;
 // document.querySelector('.playground .block-square .line').style.strokeDasharray = block2eDashOffset;
 // document.querySelector('.playground .block-square .line').style.strokeDasharray = block3DashOffset;
-
 
