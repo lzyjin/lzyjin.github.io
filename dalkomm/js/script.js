@@ -1,8 +1,8 @@
 
 // aos
 AOS.init({
-    duration: 2500,
-    easing: 'ease-in-out-back',
+    duration: 1500,
+    easing: 'ease-out-back',
     // anchorPlacement: 'bottom-bottom'
 });
 
@@ -77,4 +77,16 @@ blockLines.forEach(v => {
 // document.querySelector('.playground .block-square .line').style.strokeDasharray = block1DashOffset;
 // document.querySelector('.playground .block-square .line').style.strokeDasharray = block2eDashOffset;
 // document.querySelector('.playground .block-square .line').style.strokeDasharray = block3DashOffset;
+
+
+
+
+
+
+
+
+
+
+
+
 
