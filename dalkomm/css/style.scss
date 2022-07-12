@@ -158,7 +158,7 @@ header {
 main {
   section {
     overflow: hidden;
-    border: 1px solid #000;
+    //border: 1px solid #000;
     &.slide {
       padding-top: 100px;
       padding-bottom: 10vw;
@@ -318,9 +318,10 @@ main {
       }
       .bg {
         position: absolute;
-        left: 0;
+        left: 50%;
         bottom: 0;
-        width: 100%;
+        transform: translateX(-50%);
+        width: 1900px;
         height: auto;
         display: block;
       }

@@ -1,0 +1,96 @@
+@media screen and (max-width: 1400px) {
+  main section.slide {
+    padding-top: 30vw;
+    height: 100vh;
+  }
+  main section.slide .box .text-wrap .text {
+    font-size: 9vw;
+  }
+  main section.slide .box .swiper .swiper-slide img {
+    width: 80vw;
+  }
+  main section.phrases .text .sub-title {
+    font-size: 3.5vw;
+  }
+  main section.phrases .text .title {
+    font-size: 10vw;
+  }
+  main section.phrases .dot.dot-1 img {
+    width: 35vw;
+  }
+  main section.phrases .dot.dot-2 img {
+    width: 20vw;
+  }
+  main section.phrases .dot.dot-3 img {
+    width: 5vw;
+  }
+  main section.drawing .text {
+    width: 70vw;
+  }
+  main section.drawing .text .sub-title {
+    font-size: 3vw;
+  }
+  main section.drawing .text .title {
+    font-size: 5.5vw;
+  }
+  main section.playground .text .title {
+    width: 55vw;
+    font-size: 5.5vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  main section.playground .text .content {
+    width: 60vw;
+    margin: 0 auto;
+  }
+  main section.playground .block.block-square {
+    left: -3%;
+  }
+  main section.playground .block.block-square .photo-wrap {
+    width: 40vw;
+    height: 40vw;
+  }
+  main section.playground .block.block-square .line {
+    width: 40vw;
+    height: 40vw;
+  }
+  main section.playground .block.block-circle {
+    right: -10%;
+    top: 30%;
+  }
+  main section.playground .block.block-circle .photo-wrap {
+    width: 40vw;
+    height: 40vw;
+  }
+  main section.playground .block.block-circle .line {
+    width: 40vw;
+    height: 40vw;
+    left: 5px;
+    bottom: -40px;
+  }
+  main section.playground .block.block-house {
+    bottom: 12%;
+  }
+  main section.playground .block.block-house .photo-wrap {
+    width: 50vw;
+    height: 45vw;
+  }
+  main section.playground .block.block-house .line {
+    width: 45vw;
+    height: 40vw;
+  }
+  main section.drinks .text .title {
+    font-size: 5.5vw;
+  }
+  main section.app {
+    padding-top: 30vw;
+  }
+  main section.app .text {
+    margin-bottom: 17vw;
+  }
+  main section.app .text .title {
+    font-size: 5.5vw;
+  }
+}
+
+/*# sourceMappingURL=responsivs.css.map */
