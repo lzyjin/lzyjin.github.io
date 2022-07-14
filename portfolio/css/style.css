@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400&display=swap");
+@font-face {
+  font-family: HGGGOTHICSSI80G;
+  src: url(../font/HGGGOTHICSSI80G.TTF) format("truetype");
+}
+@font-face {
+  font-family: "mont_blanc-thin";
+  src: url("../font/mont_blanc_thin-webfont.woff2") format("woff2"), url("../font/mont_blanc_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mont_blanc-light";
+  src: url("../font/mont_blanc_light-webfont.woff2") format("woff2"), url("../font/mont_blanc_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mont_blanc-regular";
+  src: url("../font/mont_blanc_regular-webfont.woff2") format("woff2"), url("../font/mont_blanc_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mont_blanc-semibold";
+  src: url("../font/mont_blanc_semibold-webfont.woff2") format("woff2"), url("../font/mont_blanc_semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mont_blanc-bold";
+  src: url("../font/mont_blanc_bold-webfont.woff2") format("woff2"), url("../font/mont_blanc_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mont_blanc-black";
+  src: url("../font/mont_blanc_black-webfont.woff2") format("woff2"), url("../font/mont_blanc_black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  position: relative;
+}
+
+body {
+  font-family: "mont_blanc-light", "sans-serif", 돋움, Dotum, 굴림, Gulim, Verdana, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  cursor: none;
+  position: relative;
+}
+
+.cursor {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border: none;
+  border-radius: 50%;
+  z-index: 500;
+  transition: border 0.4s, background 0.4s, width 0.4s, height 0.4s;
+}
+.cursor.active {
+  border: 1px solid #000;
+  background: transparent;
+  width: 60px;
+  height: 60px;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+header .menu {
+  display: flex;
+  gap: 1vw;
+}
+header .menu a {
+  font-family: "mont_blanc-light";
+  font-size: 14px;
+  color: #000;
+}
+header .btn-color {
+  font-family: "mont_blanc-light";
+  font-size: 14px;
+}
+
+main .intro {
+  padding-top: 50px;
+  position: relative;
+  height: 100vh;
+}
+main .intro .title {
+  font-family: "mont_blanc-regular";
+  text-transform: uppercase;
+  font-size: 7vw;
+  line-height: 1.2;
+  padding: 0 15px;
+}
+main .intro .title span {
+  margin-right: 0.5vw;
+}
+main .intro .title span.italic {
+  font-style: italic;
+}
+main .intro .content {
+  position: absolute;
+  right: 15px;
+  bottom: 7vw;
+  width: 40vw;
+  text-align: right;
+}
+main .intro .scroll {
+  position: absolute;
+  left: 3vw;
+  bottom: 3vw;
+  width: 3vw;
+}
+main .contact {
+  padding: 10vw 20px 0 20px;
+}
+main .contact .title {
+  font-family: "mont_blanc-regular";
+}
+main .contact .sub-title {
+  margin-bottom: 5vw;
+}
+main .contact .block {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 2vw 1vw;
+}
+main .contact .block .email a {
+  color: #000;
+  font-size: 3vw;
+}
+main .contact .link-list {
+  margin-top: 5vw;
+  margin-bottom: 1vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+main .contact .link-list a {
+  font-size: 14px;
+  color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */
