@@ -93,9 +93,10 @@ header .menu a {
   font-size: 14px;
   color: #000;
 }
-header .btn-color {
+header .btn-color a {
   font-family: "mont_blanc-light";
   font-size: 14px;
+  color: #000;
 }
 
 main .intro {
@@ -176,12 +177,17 @@ main .project .list .item .photo {
   width: 100%;
   height: 30vw;
   overflow: hidden;
+  filter: grayscale(1);
+  transition: filter 0.8s;
 }
 main .project .list .item .photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
+}
+main .project .list .item:hover .photo {
+  filter: grayscale(0);
 }
 main .project .list:nth-of-type(1) {
   margin-left: 1vw;
@@ -239,6 +245,8 @@ main .career .list .item .photo {
   width: 100%;
   height: 20vw;
   overflow: hidden;
+  filter: grayscale(1);
+  transition: filter 0.8s;
 }
 main .career .list .item .photo img {
   width: 100%;
@@ -246,8 +254,11 @@ main .career .list .item .photo img {
   object-fit: cover;
   object-position: center center;
 }
+main .career .list .item:hover .photo {
+  filter: grayscale(0);
+}
 main .contact {
-  padding: 10vw 20px 0 20px;
+  padding: 0 20px;
 }
 main .contact .title {
   font-family: "mont_blanc-regular";

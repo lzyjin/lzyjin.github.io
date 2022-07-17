@@ -28,5 +28,12 @@
         });
     });
 
+    // color change
+    const body = document.querySelector('body');
+    const buttonColor = document.querySelector('.btn-color');
+    buttonColor.addEventListener('click', (e) => {
+        e.preventDefault();
+        body.className = 'theme-2';
+    });
 
 })();

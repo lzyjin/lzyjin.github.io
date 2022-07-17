@@ -400,27 +400,27 @@ header {
 	box-sizing: border-box;
 }
 .items div:nth-child(1) {
-	background: url('/cgv/images/movie-slide-01.jpg') no-repeat center center;
+	background: url('../images/movie-slide-01.jpg') no-repeat center center;
 	background-size: cover;
 }
 .items div:nth-child(2) {
-	background: url('/cgv/images/movie-slide-02.jpg') no-repeat center center;
+	background: url('../images/movie-slide-02.jpg') no-repeat center center;
 	background-size: cover;
 }
 .items div:nth-child(3) {
-	background: url('/cgv/images/movie-slide-03.jpg') no-repeat center center;
+	background: url('../images/movie-slide-03.jpg') no-repeat center center;
 	background-size: cover;
 }
 .items div:nth-child(4) {
-	background: url('/cgv/images/movie-slide-04.jpg') no-repeat center center;
+	background: url('../images/movie-slide-04.jpg') no-repeat center center;
 	background-size: cover;
 }
 .items div:nth-child(5) {
-	background: url('/cgv/images/movie-slide-05.jpg') no-repeat center center;
+	background: url('../images/movie-slide-05.jpg') no-repeat center center;
 	background-size: cover;
 }
 .items div:nth-child(6) {
-	background: url('/cgv/images/movie-slide-06.jpg') no-repeat center center;
+	background: url('../images/movie-slide-06.jpg') no-repeat center center;
 	background-size: cover;
 }
 
@@ -603,43 +603,43 @@ label[for=auto-slide-off].active i {
 	cursor: pointer;
 }
 #slide-img1 .mc-thum {
-	background: url(/cgv/images/movie-chart-01.jpg) no-repeat center center;
+	background: url(../images/movie-chart-01.jpg) no-repeat center center;
 	background-size: cover;
 }
 #slide-img2 .mc-thum {
-	background: url(/cgv/images/movie-chart-02.jpg) no-repeat center center;
+	background: url(../images/movie-chart-02.jpg) no-repeat center center;
 	background-size: cover;
 }
 #slide-img3 .mc-thum {
-	background: url(/cgv/images/movie-chart-03.jpg) no-repeat center center;
+	background: url(../images/movie-chart-03.jpg) no-repeat center center;
 	background-size: cover;
 }
 #slide-img4 .mc-thum {
-	background: url(/cgv/images/movie-chart-04.jpg) no-repeat center center;
+	background: url(../images/movie-chart-04.jpg) no-repeat center center;
 	background-size: cover;
 }
 #slide-img5 .mc-thum {
-	background: url(/cgv/images/movie-chart-05.jpg) no-repeat center center;
+	background: url(../images/movie-chart-05.jpg) no-repeat center center;
 	background-size: cover;
 }
 #slide-img6 .mc-thum {
-	background: url(/cgv/images/movie-chart-06.jpg) no-repeat center center;
+	background: url(../images/movie-chart-06.jpg) no-repeat center center;
 	background-size: cover;
 }
 #slide-img7 .mc-thum {
-	background: url(/cgv/images/movie-chart-07.jpg) no-repeat center center;
+	background: url(../images/movie-chart-07.jpg) no-repeat center center;
 	background-size: cover;
 }
 #slide-img8 .mc-thum {
-	background: url(/cgv/images/movie-chart-08.jpg) no-repeat center center;
+	background: url(../images/movie-chart-08.jpg) no-repeat center center;
 	background-size: cover;
 }
 #slide-img9 .mc-thum {
-	background: url(/cgv/images/movie-chart-09.jpg) no-repeat center center;
+	background: url(../images/movie-chart-09.jpg) no-repeat center center;
 	background-size: cover;
 }
 #slide-img10 .mc-thum {
-	background: url(/cgv/images/movie-chart-10.jpg) no-repeat center center;
+	background: url(../images/movie-chart-10.jpg) no-repeat center center;
 	background-size: cover;
 }
 
@@ -943,27 +943,27 @@ label[for=auto-slide-off].active i {
 	transform: translate(-50%, -50%);
 }
 .st-item:nth-child(1) {
-	background: url(/cgv/images/special-theater-01.jpg) no-repeat center center;
+	background: url(../images/special-theater-01.jpg) no-repeat center center;
 	background-size: cover;
 }
 .st-item:nth-child(2) {
-	background: url(/cgv/images/special-theater-02.jpg) no-repeat center center;
+	background: url(../images/special-theater-02.jpg) no-repeat center center;
 	background-size: cover;
 }
 .st-item:nth-child(3) {
-	background: url(/cgv/images/special-theater-03.jpg) no-repeat center center;
+	background: url(../images/special-theater-03.jpg) no-repeat center center;
 	background-size: cover;
 }
 .st-item:nth-child(4) {
-	background: url(/cgv/images/special-theater-04.jpg) no-repeat center center;
+	background: url(../images/special-theater-04.jpg) no-repeat center center;
 	background-size: cover;
 }
 .st-item:nth-child(5) {
-	background: url(/cgv/images/special-theater-05.jpg) no-repeat center center;
+	background: url(../images/special-theater-05.jpg) no-repeat center center;
 	background-size: cover;
 }
 .st-item:nth-child(6) {
-	background: url(/cgv/images/special-theater-06.jpg) no-repeat center center;
+	background: url(../images/special-theater-06.jpg) no-repeat center center;
 	background-size: cover;
 }
 
@@ -1006,7 +1006,7 @@ label[for=auto-slide-off].active i {
 	top: 0;
 	width: 370px;
 	height: 185px;
-	background: url(/cgv/images/benefit-01.jpg) no-repeat center center;
+	background: url(../images/benefit-01.jpg) no-repeat center center;
 	background-size: cover;
 }
 .b-item-2 {
@@ -1015,7 +1015,7 @@ label[for=auto-slide-off].active i {
 	left: 400px;
 	width: 200px;
 	height: 185px;
-	background: url(/cgv/images/benefit-02.jpg) no-repeat center left;
+	background: url(../images/benefit-02.jpg) no-repeat center left;
 	background-size: cover;
 }
 
@@ -1052,23 +1052,23 @@ label[for=auto-slide-off].active i {
 	border-radius: 30%;
 }
 #b-img-1 {
-	background: url(/cgv/images/benefit-03-1.jpg) no-repeat center center;
+	background: url(../images/benefit-03-1.jpg) no-repeat center center;
 	background-size: 600px 285px;
 }
 #b-img-2 {
-	background: url(/cgv/images/benefit-03-2.jpg) no-repeat center center;
+	background: url(../images/benefit-03-2.jpg) no-repeat center center;
 	background-size: 600px 285px;
 }
 #b-img-3 {
-	background: url(/cgv/images/benefit-03-3.jpg) no-repeat center center;
+	background: url(../images/benefit-03-3.jpg) no-repeat center center;
 	background-size: 600px 285px;
 }
 #b-img-4 {
-	background: url(/cgv/images/benefit-03-4.jpg) no-repeat center center;
+	background: url(../images/benefit-03-4.jpg) no-repeat center center;
 	background-size: 600px 285px;
 }
 #b-img-5 {
-	background: url(/cgv/images/benefit-03-5.jpg) no-repeat center center;
+	background: url(../images/benefit-03-5.jpg) no-repeat center center;
 	background-size: 600px 285px;
 }
 
@@ -1090,7 +1090,7 @@ label[for=auto-slide-off].active i {
 	width: inherit;
 	height: inherit;
 	box-sizing: border-box;
-	background: #27292d url(/cgv/images/benefit-04.png) no-repeat center center;
+	background: #27292d url(../images/benefit-04.png) no-repeat center center;
 	background-size: contain;
 	transition: 0.3s;
 }
@@ -1102,7 +1102,7 @@ label[for=auto-slide-off].active i {
 	width: inherit;
 	height: inherit;
 	box-sizing: border-box;
-	background: #27292d url(/cgv/images/benefit-04-2.png) no-repeat center center;
+	background: #27292d url(../images/benefit-04-2.png) no-repeat center center;
 	background-size: contain;
 	transition: 0.3s;
 }
@@ -1192,7 +1192,7 @@ label[for=auto-slide-off].active i {
 		background-color: #eee;
 		color: #333;
 		padding-top: 30px;
-	
+
 		position: relative;
 }
 .event-container h1 {
@@ -1208,7 +1208,7 @@ label[for=auto-slide-off].active i {
 	transform: translate(-50%, -40%);
 	width: 1000px;
 	height: 250px;
-	
+
 	display: flex;
 	justify-content: space-between;
 }
@@ -1396,11 +1396,11 @@ justify-content: space-between;
 	line-height: 30px;
 	line-height: 50px;
   cursor: pointer;
-}	
+}
 .n-items em {
 	float: right;
 	font-style: normal;
-}	
+}
 
 /*  ------------------------------------------------  */
 .banner-container {
@@ -1413,7 +1413,7 @@ justify-content: space-between;
 	position: relative;
 }
 .banner {
-  background: url(/cgv/images/banner.jpg) no-repeat center center;
+  background: url(../images/banner.jpg) no-repeat center center;
   background-size: cover;
   position: absolute;
 	top: 50%;
@@ -1464,7 +1464,7 @@ footer {
 .f-logo {
   width: 100px;
   height: 60px;
-  background: url(/cgv/images/logo-white.png) no-repeat center center;
+  background: url(../images/logo-white.png) no-repeat center center;
   background-size: contain;
   filter: opacity(0.7);
   float: left;
