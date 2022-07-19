@@ -363,6 +363,7 @@ $menu-orange: #ff592e;
         display: none;
       }
       .m-inner {
+        display: block;
         .f-gnb {
           display: none;
           &:checked+label+.f-lnb {

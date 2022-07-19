@@ -288,6 +288,9 @@
   footer .top .inner {
     display: none;
   }
+  footer .top .m-inner {
+    display: block;
+  }
   footer .top .m-inner .f-gnb {
     display: none;
   }
