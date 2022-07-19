@@ -728,6 +728,9 @@ footer .top .inner .menu-item .menu-links .menu-link.orange span {
 footer .top .inner .menu-item .menu-links .menu-link.orange span::before {
   background: #ff592e;
 }
+footer .top .m-inner {
+  display: none;
+}
 footer .bottom .inner {
   max-width: 1300px;
   margin: 0 auto;
