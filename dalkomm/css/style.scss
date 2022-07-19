@@ -24,7 +24,10 @@ $blue: #1A4793;
 $menu-orange: #ff592e;
 
 html {
-
+  overflow-x: hidden;
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 body {
   font-family: 'Spoqa Han Sans Neo', 'sans-serif', 돋움, Dotum, 굴림, Gulim, Verdana, Arial, sans-serif;
@@ -32,6 +35,11 @@ body {
   font-size: 20px;
   line-height: 1.5;
   font-weight: 400;
+  position: relative;
+  overflow-x: hidden;
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 header {
@@ -48,6 +56,7 @@ header {
     justify-content: space-between;
     align-items: center;
     .logo {
+      margin-left: 20px;
       img {
 
       }
@@ -155,6 +164,130 @@ header {
     }
   }
 }
+.m-header {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 200;
+  background: $background;
+  padding: 15px;
+  transition: background .4s;
+  .logo {
+    display: inline-block;
+    img {
+
+    }
+  }
+  .burger {
+      margin-left: auto;
+      width: 20px;
+      height: 13px;
+      z-index: 70;
+      position: absolute;
+      right: 20px;
+      top: 38%;
+      cursor: pointer;
+      transition: transform .2s;
+      span {
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        left: 0;
+        transition: .2s;
+        &:nth-child(1) {
+          top: 0;
+        }
+        &:nth-child(2) {
+          top: 50%;
+        }
+        &:nth-child(3) {
+          top: 100%;
+        }
+      }
+    &.active {
+      transform: rotate(90deg);
+      span {
+        &:nth-child(1) {
+          transform-origin: center;
+          transform: rotate(-45deg);
+          top: 50%;
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          transform-origin: center;
+          transform: rotate(45deg);
+          top: 50%;
+        }
+      }
+    }
+    }
+  &.active {
+    background: #fff;
+  }
+}
+.m-menu {
+  display: none;
+  position: fixed;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 100;
+  transition: transform .4s;
+  .list-wrap {
+    height: 100vh;
+    overflow-y: scroll;
+    .list {
+      margin-top: 120px;
+      .gnb {
+        display: none;
+        &:checked+label+.lnb {
+          display: block;
+        }
+      }
+      label {
+        cursor: pointer;
+        font-size: 33px;
+        font-weight: 700;
+        //border: 1px solid red;
+        padding: 20px;
+        display: block;
+        position: relative;
+        i {
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 20px;
+        }
+        &:hover {
+          color: $menu-orange;
+        }
+      }
+      .lnb {
+        display: none;
+        a {
+          padding: 7px 30px;
+          font-size: 15px;
+          color: #000;
+          display: block;
+          &:hover {
+            color: $menu-orange;
+          }
+        }
+      }
+    }
+  }
+  &.active {
+    transform: translateX(-100%);
+  }
+}
 main {
   section {
     overflow: hidden;
@@ -191,6 +324,9 @@ main {
             img {
               width: 1000px;
               height: auto;
+              &.sm {
+                display: none;
+              }
             }
           }
           .swiper-pagination {
@@ -495,9 +631,11 @@ main {
         max-width: 2000px;
         margin: 0 auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         .photo-wrap {
+          margin-left: 40px;
+          margin-right: 40px;
           &:nth-of-type(odd) {
             transform: translateY(20px);
           }
@@ -528,8 +666,7 @@ main {
     &.banner {
       padding-top: 180px;
       padding-bottom: 120px;
-      background: $blue url(../images/bg_supporter.png) no-repeat center center;
-      background-size: cover;
+      background: $blue url(../images/bg_supporter.png) no-repeat center center / cover;
       .text {
         text-align: center;
         z-index: 1;
@@ -659,7 +796,7 @@ footer {
         flex: 1;
         .info {
           margin-bottom: 40px;
-          .compony {
+          .company {
             font-size: 14px;
             color: #222;
           }
@@ -681,6 +818,7 @@ footer {
             color: #000;
             margin-right: 10px;
             i {
+              transform: translateY(6px);
               font-size: 30px;
             }
           }

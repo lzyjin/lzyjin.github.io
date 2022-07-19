@@ -2,13 +2,14 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>clone coding - Dal.Komm</title>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsivs.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
@@ -68,6 +69,62 @@
             <div class="lnb-bg"></div>
         </div>
     </header>
+    <div class="m-header">
+        <a href="" class="logo">
+            <img src="images/dalkomm.svg" alt="">
+        </a>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="m-menu">
+        <div class="list-wrap">
+            <div class="list">
+                <input type="radio" class="gnb" name="gnb" id="gnb-1">
+                <label for="gnb-1">
+                    Dal.Komm
+                    <i class="xi-angle-down-min"></i>
+                </label>
+                <div class="lnb">
+                    <a href="">브랜드 이야기</a>
+                    <a href="">App 소개</a>
+                </div>
+                <input type="radio" class="gnb" name="gnb" id="gnb-2">
+                <label for="gnb-2">
+                    메뉴 · 매장
+                    <i class="xi-angle-down-min"></i>
+                </label>
+                <div class="lnb">
+                    <a href="">메뉴</a>
+                    <a href="">매장찾기</a>
+                    <a href="">글로벌 달콤</a>
+                </div>
+                <input type="radio" class="gnb" name="gnb" id="gnb-3">
+                <label for="gnb-3">
+                    창업안내
+                    <i class="xi-angle-down-min"></i>
+                </label>
+                <div class="lnb">
+                    <a href="">가맹점 개설 안내</a>
+                    <a href="">창업 상담 신청</a>
+                </div>
+                <input type="radio" class="gnb" name="gnb" id="gnb-4">
+                <label for="gnb-4">
+                    새로운 소식
+                    <i class="xi-angle-down-min"></i>
+                </label>
+                <div class="lnb">
+                    <a href="">뉴스</a>
+                    <a href="">공지사항</a>
+                    <a href="">달콤 스토리</a>
+                </div>
+                <input type="radio" class="gnb" name="gnb" id="gnb-5">
+                <label for="gnb-5">SHOP</label>
+            </div>
+        </div>
+    </div>
 
     <main>
         <section class="slide">
@@ -80,28 +137,30 @@
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="images/1.png" alt="">
+                            <img class="lg" src="images/1.png" alt="">
+                            <img class="sm" src="images/m-1.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/2.png" alt="">
+                            <img class="lg" src="images/2.png" alt="">
+                            <img class="sm" src="images/m-2.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/3.png" alt="">
+                            <img class="lg" src="images/3.png" alt="">
+                            <img class="sm" src="images/m-3.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/4.png" alt="">
+                            <img class="lg" src="images/4.png" alt="">
+                            <img class="sm" src="images/m-4.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="images/5.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/6.png" alt="">
+                            <img class="lg" src="images/5.png" alt="">
+                            <img class="sm" src="images/m-5.png" alt="">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
                     <div class="swiper-text-wrap">
                         <div class="swiper-text swiper-text-1 active">
-                            <p class="content">LOVE FOR YOU!<br>소중한 사람에게 마음을 전하세요</p>
+                            <p class="content">oh summer~!<br>청량하고 시원한 여름이야</p>
                             <a class="link">구매하러 가기</a>
                         </div>
                         <div class="swiper-text swiper-text-2">
@@ -113,14 +172,10 @@
                             <a class="link">구매하러 가기</a>
                         </div>
                         <div class="swiper-text swiper-text-4">
-                            <p class="content">Oh, JEJU!<br>달콤한 제주 한모금</p>
-                            <a class="link">메뉴 보러가기</a>
-                        </div>
-                        <div class="swiper-text swiper-text-5">
                             <p class="content">시그니처 텀블러 사용 시<br>커피류 천원 즉시 할인!</p>
                             <a class="link">이벤트 내용 확인</a>
                         </div>
-                        <div class="swiper-text swiper-text-6">
+                        <div class="swiper-text swiper-text-5">
                             <p class="content">시그니처 텀블러 출시!<br>건강한 지구를 위한 텀블러 습관</p>
                             <a class="link">지금 바로 구매하기</a>
                         </div>
@@ -192,7 +247,7 @@
         <section class="drinks">
             <div class="text" data-aos="fade">
                 <h1 class="title">달콤이 선사하는 다채로운 경험</h1>
-                <p class="content">커피의 본질적인 것을 통한 커피의 전문성을 부각 시키는 컨텐츠와 함께 비주얼, 맛, 건강함, 그리고 마시는 재미까지 선사합니다</p>
+                <p class="content">커피의 본질적인 것을 통한 커피의 전문성을 부각 시키는 컨텐츠와 함께 비주얼, 맛, 건강함, 그리고 마시는 재미까지 함께 선사합니다</p>
             </div>
             <div class="bg-white">
             </div>
@@ -316,6 +371,39 @@
                     </div>
                 </div>
             </div>
+            <div class="m-inner">
+                <input type="radio" class="f-gnb" name="f-gnb" id="f-gnb-1">
+                <label for="f-gnb-1">
+                    고객을 위한 달콤
+                    <i class="xi-angle-down-min"></i>
+                </label>
+                <div class="f-lnb">
+                    <a href="">문의하기 (Contact Us)</a>
+                    <a href="">고객상담센터 1661-1399</a>
+                </div>
+                <input type="radio" class="f-gnb" name="f-gnb" id="f-gnb-2">
+                <label for="f-gnb-2">
+                    파트너를 위한 달콤
+                    <i class="xi-angle-down-min"></i>
+                </label>
+                <div class="f-lnb">
+                    <a href="">협력업체 문의</a>
+                    <a href="">가맹 문의</a>
+                    <a href="">제휴 · 마케팅 문의</a>
+                    <a href="">브랜드 소개서</a>
+                </div>
+                <input type="radio" class="f-gnb" name="f-gnb" id="f-gnb-3">
+                <label for="f-gnb-3">
+                    개인정보 보호 및 약관
+                    <i class="xi-angle-down-min"></i>
+                </label>
+                <div class="f-lnb">
+                    <a href="">개인정보 처리방침</a>
+                    <a href="">서비스 이용약관</a>
+                    <a href="">위치기반서비스 이용약관</a>
+                    <a href="">영상정보 처리기기 운영관리 방침</a>
+                </div>
+            </div>
         </div>
         <div class="bottom">
             <div class="inner">
@@ -333,7 +421,7 @@
                 </div>
                 <div class="other">
                     <div class="info">
-                        <span class="compony">주)다날에프엔비 +</span>
+                        <span class="company">주)다날에프엔비 +</span>
                         <p>
                             <span>주소지 : 경기도 성남시 분당구 황새울로 359번길 7, 한국정보공학 3층</span>
                             <span>대표이사 : 박경철</span>

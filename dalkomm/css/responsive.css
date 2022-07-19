@@ -1,0 +1,357 @@
+@media screen and (max-width: 1400px) {
+  main section.slide {
+    padding-top: 30vw;
+    height: 100vh;
+  }
+  main section.slide .box .text-wrap .text {
+    font-size: 9vw;
+  }
+  main section.slide .box .swiper .swiper-slide img {
+    width: 80vw;
+  }
+  main section.phrases .text .sub-title {
+    font-size: 3.5vw;
+  }
+  main section.phrases .text .title {
+    font-size: 10vw;
+  }
+  main section.phrases .dot.dot-1 img {
+    width: 35vw;
+  }
+  main section.phrases .dot.dot-2 img {
+    width: 20vw;
+  }
+  main section.phrases .dot.dot-3 img {
+    width: 5vw;
+  }
+  main section.drawing .text {
+    width: 70vw;
+  }
+  main section.drawing .text .sub-title {
+    font-size: 3vw;
+  }
+  main section.drawing .text .title {
+    font-size: 5.5vw;
+  }
+  main section.playground .text .title {
+    width: 55vw;
+    font-size: 5.5vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  main section.playground .text .content {
+    width: 60vw;
+    margin: 0 auto;
+  }
+  main section.playground .block.block-square {
+    left: -3%;
+  }
+  main section.playground .block.block-square .photo-wrap {
+    width: 40vw;
+    height: 40vw;
+  }
+  main section.playground .block.block-square .line {
+    width: 40vw;
+    height: 40vw;
+  }
+  main section.playground .block.block-circle {
+    right: -10%;
+    top: 30%;
+  }
+  main section.playground .block.block-circle .photo-wrap {
+    width: 40vw;
+    height: 40vw;
+  }
+  main section.playground .block.block-circle .line {
+    width: 40vw;
+    height: 40vw;
+    left: 5px;
+    bottom: -40px;
+  }
+  main section.playground .block.block-house {
+    bottom: 12%;
+  }
+  main section.playground .block.block-house .photo-wrap {
+    width: 50vw;
+    height: 45vw;
+  }
+  main section.playground .block.block-house .line {
+    width: 45vw;
+    height: 40vw;
+  }
+  main section.drinks .text .title {
+    font-size: 5.5vw;
+  }
+  main section.app {
+    padding-top: 30vw;
+  }
+  main section.app .text {
+    margin-bottom: 17vw;
+  }
+  main section.app .text .title {
+    font-size: 5.5vw;
+  }
+  main section.banner .text .title {
+    font-size: 5.5vw;
+  }
+}
+@media screen and (max-width: 1300px) {
+  footer .top {
+    width: 85%;
+    margin: 0 auto;
+  }
+  footer .top .logo {
+    display: none;
+  }
+  footer .bottom {
+    width: 85%;
+    margin: 0 auto;
+  }
+  footer .bottom .inner {
+    flex-direction: column;
+  }
+  footer .bottom .inner .family-site {
+    margin-bottom: 50px;
+  }
+  footer .bottom .inner .other .info p {
+    width: 514px;
+  }
+}
+@media screen and (max-width: 960px) {
+  header {
+    display: none;
+  }
+  .m-header {
+    display: block;
+  }
+  .m-menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 750px) {
+  main section.slide {
+    height: 100vh;
+    min-height: 750px;
+    padding-top: 50vw;
+  }
+  main section.slide .box .text-wrap .text {
+    font-size: 13vw;
+  }
+  main section.slide .box .swiper {
+    margin-left: 5%;
+  }
+  main section.slide .box .swiper .swiper-slide img {
+    width: 75vw;
+    height: auto;
+  }
+  main section.slide .box .swiper .swiper-slide img.sm {
+    display: block;
+  }
+  main section.slide .box .swiper .swiper-slide img.lg {
+    display: none;
+  }
+  main section.slide .box .swiper .swiper-pagination {
+    left: auto;
+    right: 30px;
+    top: auto;
+    bottom: 25%;
+  }
+  main section.slide .box .swiper .swiper-text-wrap {
+    left: auto;
+    right: 30px;
+    top: auto;
+    bottom: -20px;
+    text-align: right;
+  }
+  main section.phrases {
+    min-height: 820px;
+  }
+  main section.phrases .text .sub-title {
+    font-size: 6vw;
+  }
+  main section.phrases .text .title {
+    font-size: 13vw;
+  }
+  main section.phrases .text .content {
+    font-size: 5vw;
+  }
+  main section.drawing {
+    min-height: 820px;
+  }
+  main section.drawing .text .sub-title {
+    font-size: 6vw;
+  }
+  main section.drawing .text .title {
+    font-size: 10.7vw;
+  }
+  main section.drawing .bg {
+    width: 1350px;
+    bottom: 0;
+  }
+  main section.playground {
+    min-height: 1000px;
+  }
+  main section.playground .text .title {
+    width: 100vw;
+    font-size: 11vw;
+    margin-bottom: 50px;
+  }
+  main section.playground .text .content {
+    width: 70vw;
+    font-size: 5vw;
+  }
+  main section.playground .block.block-square {
+    left: -3%;
+    top: 35%;
+  }
+  main section.playground .block.block-square .photo-wrap {
+    width: 67vw;
+    height: 67vw;
+  }
+  main section.playground .block.block-square .line {
+    width: 67vw;
+    height: 67vw;
+  }
+  main section.playground .block.block-circle {
+    display: none;
+  }
+  main section.playground .block.block-house {
+    left: 80%;
+    bottom: 0;
+  }
+  main section.playground .block.block-house .photo-wrap {
+    width: 100vw;
+    height: 90vw;
+  }
+  main section.playground .block.block-house .line {
+    width: 90vw;
+    height: 85vw;
+  }
+  main section.drinks {
+    padding-top: 40vw;
+  }
+  main section.drinks .text .title {
+    font-size: 10vw;
+  }
+  main section.drinks .text .content {
+    width: 85vw;
+    font-size: 5vw;
+  }
+  main section.drinks .bg-white {
+    height: 150px;
+  }
+  main section.drinks .menu-wrap {
+    height: 270px;
+  }
+  main section.drinks .menu-wrap .menu {
+    height: 100%;
+  }
+  main section.app {
+    padding-top: 50vw;
+    padding-bottom: 20vw;
+  }
+  main section.app .text {
+    margin-bottom: 17vw;
+  }
+  main section.app .text .title {
+    font-size: 10vw;
+  }
+  main section.app .text .content {
+    width: 70vw;
+    font-size: 5vw;
+  }
+  main section.banner {
+    padding-top: 20%;
+    height: 165vw;
+    background: #1A4793 url(../images/bg_supporter_mo.svg) no-repeat center center/cover;
+  }
+  main section.banner .text .title {
+    font-size: 10vw;
+    margin-bottom: 30px;
+  }
+  main section.banner .text .content {
+    width: 74vw;
+    font-size: 5vw;
+    margin-bottom: 50px;
+  }
+  main section.banner .text button {
+    padding: 15px 70px;
+    font-size: 24px;
+  }
+  footer {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  footer .top {
+    width: 90%;
+  }
+  footer .top .inner {
+    display: none;
+  }
+  footer .top .m-inner .f-gnb {
+    display: none;
+  }
+  footer .top .m-inner .f-gnb:checked + label + .f-lnb {
+    display: block;
+  }
+  footer .top .m-inner label {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0;
+    display: block;
+    position: relative;
+  }
+  footer .top .m-inner label i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+  }
+  footer .top .m-inner label:hover {
+    color: #ff592e;
+  }
+  footer .top .m-inner .f-lnb {
+    display: none;
+  }
+  footer .top .m-inner .f-lnb a {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #555;
+    display: block;
+  }
+  footer .top .m-inner .f-lnb a:hover {
+    color: #ff592e;
+  }
+  footer .bottom {
+    width: 90%;
+  }
+  footer .bottom .inner .family-site select {
+    width: 100%;
+  }
+  footer .bottom .inner .other .info .company {
+    font-size: 12px;
+  }
+  footer .bottom .inner .other .info p span {
+    font-size: 12px;
+  }
+  footer .bottom .inner .other .info p span:nth-child(1) {
+    display: block;
+  }
+  footer .bottom .inner .other .info p span:nth-child(4) {
+    display: block;
+  }
+  footer .bottom .inner .other .info p span:nth-child(5) {
+    display: block;
+  }
+  footer .bottom .inner .other .download .app-link {
+    padding: 15px 25px;
+    font-size: 13px;
+  }
+  footer .bottom .inner .other .download .app-link i {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,445 @@
+$blue: #1A4793;
+$menu-orange: #ff592e;
+
+@media screen and (max-width: 1400px) {
+  main {
+    section {
+      &.slide {
+        padding-top: 30vw;
+        height: 100vh;
+        .box {
+          .text-wrap {
+            .text {
+              font-size: 9vw;
+            }
+          }
+          .swiper {
+            .swiper-slide {
+              img {
+                width: 80vw;
+              }
+            }
+          }
+        }
+      }
+      &.phrases {
+        .text {
+          .sub-title {
+            font-size: 3.5vw;
+          }
+          .title {
+            font-size: 10vw;
+          }
+        }
+        .dot {
+          &.dot-1 {
+            img {
+              width: 35vw;
+            }
+          }
+          &.dot-2 {
+            img {
+              width: 20vw;
+            }
+          }
+          &.dot-3 {
+            img {
+              width: 5vw;
+            }
+          }
+        }
+      }
+      &.drawing {
+        .text {
+          width: 70vw;
+          .sub-title {
+            font-size: 3vw;
+          }
+          .title {
+            font-size: 5.5vw;
+          }
+        }
+        .bg {
+
+        }
+      }
+      &.playground {
+        .text {
+          .title {
+            width: 55vw;
+            font-size: 5.5vw;
+            margin: 0 auto;
+            margin-bottom: 50px;
+          }
+          .content {
+            width: 60vw;
+            margin: 0 auto;
+          }
+        }
+        .block {
+          &.block-square {
+            left: -3%;
+            .photo-wrap {
+              width: 40vw;
+              height: 40vw;
+            }
+            .line {
+              width: 40vw;
+              height: 40vw;
+            }
+          }
+          &.block-circle {
+            right: -10%;
+            top: 30%;
+            .photo-wrap {
+              width: 40vw;
+              height: 40vw;
+            }
+            .line {
+              width: 40vw;
+              height: 40vw;
+              left: 5px;
+              bottom: -40px;
+            }
+          }
+          &.block-house {
+            bottom: 12%;
+            .photo-wrap {
+              width: 50vw;
+              height: 45vw;
+            }
+            .line {
+              width: 45vw;
+              height: 40vw;
+            }
+          }
+        }
+      }
+      &.drinks {
+        .text {
+          .title {
+            font-size: 5.5vw;
+          }
+        }
+      }
+      &.app {
+        padding-top: 30vw;
+        .text {
+          margin-bottom: 17vw;
+          .title {
+            font-size: 5.5vw;
+          }
+        }
+      }
+      &.banner {
+        .text {
+          .title {
+            font-size: 5.5vw;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  footer {
+    .top {
+      width: 85%;
+      margin: 0 auto;
+      .logo {
+        display: none;
+      }
+    }
+    .bottom {
+      width: 85%;
+      margin: 0 auto;
+      .inner {
+        flex-direction: column;
+        .family-site {
+          margin-bottom: 50px;
+        }
+        .other {
+          .info {
+              p {
+                width: 514px;
+              }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  header {
+    display: none;
+  }
+  .m-header {
+    display: block;
+  }
+  .m-menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 750px) {
+  main {
+    section {
+      &.slide {
+        height: 100vh;
+        //omg..
+        min-height: 750px;
+        padding-top: 50vw;
+        .box {
+          .text-wrap {
+            .text {
+              font-size: 13vw;
+            }
+          }
+          .swiper {
+            margin-left: 5%;
+            .swiper-slide {
+              img {
+                width: 75vw;
+                height: auto;
+                &.sm {
+                  display: block;
+                }
+                &.lg {
+                  display: none;
+                }
+              }
+            }
+            .swiper-pagination {
+              left: auto;
+              right: 30px;
+              top: auto;
+              bottom: 25%;
+            }
+            .swiper-text-wrap {
+              left: auto;
+              right: 30px;
+              top: auto;
+              bottom: -20px;
+              text-align: right;
+            }
+          }
+        }
+      }
+      &.phrases {
+        min-height: 820px;
+        .text {
+          .sub-title {
+            font-size: 6vw;
+          }
+          .title {
+            font-size: 13vw;
+          }
+          .content {
+            font-size: 5vw;
+          }
+        }
+      }
+      &.drawing {
+        min-height: 820px;
+        .text {
+          .sub-title {
+            font-size: 6vw;
+          }
+          .title {
+            font-size: 10.7vw;
+          }
+        }
+        .bg {
+          width: 1350px;
+          bottom: 0;
+        }
+      }
+      &.playground {
+        min-height: 1000px;
+        .text {
+          .title {
+            width: 100vw;
+            font-size: 11vw;
+            margin-bottom: 50px;
+          }
+          .content {
+            width: 70vw;
+            font-size: 5vw;
+          }
+        }
+        .block {
+          &.block-square {
+            left: -3%;
+            top: 35%;
+            .photo-wrap {
+              width: 67vw;
+              height: 67vw;
+            }
+            .line {
+              width: 67vw;
+              height: 67vw;
+            }
+          }
+          &.block-circle {
+            display: none;
+          }
+          &.block-house {
+            left: 80%;
+            bottom: 0;
+            .photo-wrap {
+              width: 100vw;
+              height: 90vw;
+            }
+            .line {
+              width: 90vw;
+              height: 85vw;
+            }
+          }
+        }
+      }
+      &.drinks {
+        padding-top: 40vw;
+        .text {
+          .title {
+            font-size: 10vw;
+          }
+          .content {
+            width: 85vw;
+            font-size: 5vw;
+          }
+        }
+        .bg-white {
+          height: 150px;
+        }
+        .menu-wrap {
+          height: 270px;
+          .menu {
+            height: 100%;
+          }
+        }
+      }
+      &.app {
+        padding-top: 50vw;
+        padding-bottom: 20vw;
+        .text {
+          margin-bottom: 17vw;
+          .title {
+            font-size: 10vw;
+          }
+          .content {
+            width: 70vw;
+            font-size: 5vw;
+          }
+        }
+      }
+      &.banner {
+        padding-top: 20%;
+        height: 165vw;
+        background: $blue url(../images/bg_supporter_mo.svg) no-repeat center center / cover;
+        .text {
+          .title {
+            font-size: 10vw;
+            margin-bottom: 30px;
+          }
+          .content {
+            width: 74vw;
+            font-size: 5vw;
+            margin-bottom: 50px;
+          }
+          button {
+            padding: 15px 70px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    .top {
+      width: 90%;
+      .inner {
+        display: none;
+      }
+      .m-inner {
+        .f-gnb {
+          display: none;
+          &:checked+label+.f-lnb {
+            display: block;
+          }
+        }
+        label {
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 700;
+          padding: 10px 0;
+          display: block;
+          position: relative;
+          i {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 16px;
+          }
+          &:hover {
+            color: $menu-orange;
+          }
+        }
+        .f-lnb {
+          display: none;
+          a {
+            padding: 5px 10px;
+            font-size: 14px;
+            color: #555;
+            display: block;
+            &:hover {
+              color: $menu-orange;
+            }
+          }
+        }
+      }
+    }
+    .bottom {
+      width: 90%;
+      .inner {
+        .family-site {
+          select {
+            width: 100%;
+          }
+        }
+        .other {
+          .info {
+            .company {
+              font-size: 12px;
+            }
+            p {
+              span {
+              font-size: 12px;
+                &:nth-child(1) {
+                  display: block;
+                }
+                &:nth-child(4) {
+                  display: block;
+                }
+                &:nth-child(5) {
+                  display: block;
+                }
+              }
+            }
+          }
+          .download {
+            .app-link {
+              padding: 15px 25px;
+              font-size: 13px;
+              i {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

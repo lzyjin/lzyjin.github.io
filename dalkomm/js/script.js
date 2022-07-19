@@ -1,5 +1,5 @@
 
-// aos
+// aos -----------
 AOS.init({
     duration: 1500,
     easing: 'ease-out-back',
@@ -79,7 +79,17 @@ blockLines.forEach(v => {
 // document.querySelector('.playground .block-square .line').style.strokeDasharray = block3DashOffset;
 
 
-
+// m-header burger click active
+const mHeader = document.querySelector('.m-header');
+const burger = document.querySelector('.m-header .burger');
+const mMenu = document.querySelector('.m-menu');
+burger.addEventListener('click', function() {
+    burger.classList.toggle('active');
+    mMenu.classList.toggle('active');
+    mHeader.classList.toggle('active');
+    document.querySelector('html').classList.toggle('no-scroll');
+    document.querySelector('body').classList.toggle('no-scroll');
+});
 
 
 
