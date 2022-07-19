@@ -48,8 +48,21 @@
   font-weight: normal;
   font-style: normal;
 }
+
+$pink: #F6748D;
+$light-gray: rgba(239, 239, 236, 1);
+$white: #fff;
+$black: #000;
+$semi-black: #2b2b28;
+$ivory: #F0EBE3;
+//$blue: #3330E4;
+$yellow: #FAEA48;
+$grayish-blue: #7D9D9C;
+$sky-blue : #789ed0;
+
 html {
   position: relative;
+  overflow-x: hidden;
 }
 body {
   //font-family: 'HGGGOTHICSSI80G', 'sans-serif', 돋움, Dotum, 굴림, Gulim, Verdana, Arial, sans-serif;
@@ -59,6 +72,137 @@ body {
   font-weight: 400;
   cursor: none;
   position: relative;
+  overflow-x: hidden;
+  &.theme-1 {
+    background: $white;
+    color: $black;
+    a {
+      color: $black;
+    }
+    header.active {
+      background: $white;
+    }
+    .tag {
+      border: 1px solid $black !important;
+    }
+    .contact {
+      .block {
+        border-top: 1px solid $black !important;
+        border-bottom: 1px solid $black !important;
+      }
+    }
+    .cursor {
+      background: $black;
+      &.active {
+        background: transparent;
+        border: 1px solid $black !important;
+      }
+    }
+  }
+  &.theme-2 {
+    background: $light-gray;
+    color: $pink;
+    a {
+      color: $pink;
+    }
+    header.active {
+      background: $light-gray;
+    }
+    .tag {
+      border: 1px solid $pink !important;
+    }
+    .contact {
+      .block {
+        border-top: 1px solid $pink !important;
+        border-bottom: 1px solid $pink !important;
+      }
+    }
+    .cursor {
+      background: $pink;
+      &.active {
+        background: transparent;
+        border: 1px solid $pink !important;
+      }
+    }
+  }
+  &.theme-3 {
+    background: $grayish-blue;
+    color: $ivory;
+    a {
+      color: $ivory;
+    }
+    header.active {
+      background: $grayish-blue;
+    }
+    .tag {
+      border: 1px solid $ivory !important;
+    }
+    .contact {
+      .block {
+        border-top: 1px solid $ivory !important;
+        border-bottom: 1px solid $ivory !important;
+      }
+    }
+    .cursor {
+      background: $ivory;
+      &.active {
+        background: transparent;
+        border: 1px solid $ivory !important;
+      }
+    }
+  }
+  &.theme-4 {
+    background: $semi-black;
+    color: $yellow;
+    a {
+      color: $yellow;
+    }
+    header.active {
+      background: $semi-black;
+    }
+    .tag {
+      border: 1px solid $yellow !important;
+    }
+    .contact {
+      .block {
+        border-top: 1px solid $yellow !important;
+        border-bottom: 1px solid $yellow !important;
+      }
+    }
+    .cursor {
+      background: $yellow;
+      &.active {
+        background: transparent;
+        border: 1px solid $yellow !important;
+      }
+    }
+  }
+  &.theme-5 {
+    background: $sky-blue;
+    color: $white;
+    a {
+      color: $white;
+    }
+    header.active {
+      background: $sky-blue;
+    }
+    .tag {
+      border: 1px solid $white !important;
+    }
+    .contact {
+      .block {
+        border-top: 1px solid $white !important;
+        border-bottom: 1px solid $white !important;
+      }
+    }
+    .cursor {
+      background: $white;
+      &.active {
+        background: transparent;
+        border: 1px solid $white !important;
+      }
+    }
+  }
 }
 
 .cursor {
@@ -98,14 +242,12 @@ header {
     a {
       font-family: 'mont_blanc-light';
       font-size: 14px;
-      color: #000;
     }
   }
   .btn-color {
     a {
       font-family: 'mont_blanc-light';
       font-size: 14px;
-      color: #000;
     }
   }
 }
@@ -165,7 +307,6 @@ main {
           justify-content: space-between;
           margin-bottom: 5px;
           .item_title {
-            color: #000;
             font-size: 1.5rem;
           }
           .wrap {
@@ -177,11 +318,9 @@ main {
               border-radius: 30px;
               padding: 5px 10px;
               font-size: 12px;
-              color: #000;
             }
             .date {
               font-size: 14px;
-              color: #000;
             }
           }
         }
@@ -233,7 +372,6 @@ main {
           justify-content: space-between;
           margin-bottom: 5px;
           .item_title {
-            color: #000;
             font-size: 1.5rem;
           }
           .wrap {
@@ -245,11 +383,9 @@ main {
               border-radius: 30px;
               padding: 5px 10px;
               font-size: 12px;
-              color: #000;
             }
             .date {
               font-size: 14px;
-              color: #000;
             }
           }
         }
@@ -286,7 +422,6 @@ main {
       padding: 2vw 1vw;
       .email {
         a {
-          color: #000;
           font-size: 3vw;
         }
       }
@@ -299,7 +434,6 @@ main {
       padding: 15px;
       a {
         font-size: 14px;
-        color: #000;
       }
     }
   }

@@ -1,0 +1,61 @@
+@media screen and (max-width: 1500px) {
+  main .project .list .item .text {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 950px) {
+  body {
+    cursor: default;
+  }
+  a {
+    cursor: pointer;
+  }
+  .cursor {
+    display: none;
+  }
+  main .intro .content {
+    width: 80vw;
+  }
+  main .intro .scroll {
+    width: 10vw;
+  }
+  main .project {
+    padding-top: 30vw;
+  }
+  main .project .list {
+    width: 90vw;
+  }
+  main .project .list .item {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .project .list:nth-of-type(1) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .project .list:nth-of-type(2) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .career {
+    padding-top: 30vw;
+  }
+  main .career .list .item {
+    width: 45%;
+  }
+  main .career .list .item .text .item_title {
+    line-height: 1.2;
+  }
+  main .contact {
+    padding-top: 30vw;
+  }
+  main .contact .block {
+    margin-bottom: 10vw;
+  }
+  main .contact .block .email a {
+    font-size: 7vw;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

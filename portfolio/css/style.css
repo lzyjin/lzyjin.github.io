@@ -42,6 +42,7 @@
 }
 html {
   position: relative;
+  overflow-x: hidden;
 }
 
 body {
@@ -51,6 +52,127 @@ body {
   font-weight: 400;
   cursor: none;
   position: relative;
+  overflow-x: hidden;
+}
+body.theme-1 {
+  background: #fff;
+  color: #000;
+}
+body.theme-1 a {
+  color: #000;
+}
+body.theme-1 header.active {
+  background: #fff;
+}
+body.theme-1 .tag {
+  border: 1px solid #000 !important;
+}
+body.theme-1 .contact .block {
+  border-top: 1px solid #000 !important;
+  border-bottom: 1px solid #000 !important;
+}
+body.theme-1 .cursor {
+  background: #000;
+}
+body.theme-1 .cursor.active {
+  background: transparent;
+  border: 1px solid #000 !important;
+}
+body.theme-2 {
+  background: rgb(239, 239, 236);
+  color: #F6748D;
+}
+body.theme-2 a {
+  color: #F6748D;
+}
+body.theme-2 header.active {
+  background: rgb(239, 239, 236);
+}
+body.theme-2 .tag {
+  border: 1px solid #F6748D !important;
+}
+body.theme-2 .contact .block {
+  border-top: 1px solid #F6748D !important;
+  border-bottom: 1px solid #F6748D !important;
+}
+body.theme-2 .cursor {
+  background: #F6748D;
+}
+body.theme-2 .cursor.active {
+  background: transparent;
+  border: 1px solid #F6748D !important;
+}
+body.theme-3 {
+  background: #7D9D9C;
+  color: #F0EBE3;
+}
+body.theme-3 a {
+  color: #F0EBE3;
+}
+body.theme-3 header.active {
+  background: #7D9D9C;
+}
+body.theme-3 .tag {
+  border: 1px solid #F0EBE3 !important;
+}
+body.theme-3 .contact .block {
+  border-top: 1px solid #F0EBE3 !important;
+  border-bottom: 1px solid #F0EBE3 !important;
+}
+body.theme-3 .cursor {
+  background: #F0EBE3;
+}
+body.theme-3 .cursor.active {
+  background: transparent;
+  border: 1px solid #F0EBE3 !important;
+}
+body.theme-4 {
+  background: #2b2b28;
+  color: #FAEA48;
+}
+body.theme-4 a {
+  color: #FAEA48;
+}
+body.theme-4 header.active {
+  background: #2b2b28;
+}
+body.theme-4 .tag {
+  border: 1px solid #FAEA48 !important;
+}
+body.theme-4 .contact .block {
+  border-top: 1px solid #FAEA48 !important;
+  border-bottom: 1px solid #FAEA48 !important;
+}
+body.theme-4 .cursor {
+  background: #FAEA48;
+}
+body.theme-4 .cursor.active {
+  background: transparent;
+  border: 1px solid #FAEA48 !important;
+}
+body.theme-5 {
+  background: #789ed0;
+  color: #fff;
+}
+body.theme-5 a {
+  color: #fff;
+}
+body.theme-5 header.active {
+  background: #789ed0;
+}
+body.theme-5 .tag {
+  border: 1px solid #fff !important;
+}
+body.theme-5 .contact .block {
+  border-top: 1px solid #fff !important;
+  border-bottom: 1px solid #fff !important;
+}
+body.theme-5 .cursor {
+  background: #fff;
+}
+body.theme-5 .cursor.active {
+  background: transparent;
+  border: 1px solid #fff !important;
 }
 
 .cursor {
@@ -91,12 +213,10 @@ header .menu {
 header .menu a {
   font-family: "mont_blanc-light";
   font-size: 14px;
-  color: #000;
 }
 header .btn-color a {
   font-family: "mont_blanc-light";
   font-size: 14px;
-  color: #000;
 }
 
 main .intro {
@@ -154,7 +274,6 @@ main .project .list .item .text {
   margin-bottom: 5px;
 }
 main .project .list .item .text .item_title {
-  color: #000;
   font-size: 1.5rem;
 }
 main .project .list .item .text .wrap {
@@ -167,11 +286,9 @@ main .project .list .item .text .wrap .tag {
   border-radius: 30px;
   padding: 5px 10px;
   font-size: 12px;
-  color: #000;
 }
 main .project .list .item .text .wrap .date {
   font-size: 14px;
-  color: #000;
 }
 main .project .list .item .photo {
   width: 100%;
@@ -222,7 +339,6 @@ main .career .list .item .text {
   margin-bottom: 5px;
 }
 main .career .list .item .text .item_title {
-  color: #000;
   font-size: 1.5rem;
 }
 main .career .list .item .text .wrap {
@@ -235,11 +351,9 @@ main .career .list .item .text .wrap .tag {
   border-radius: 30px;
   padding: 5px 10px;
   font-size: 12px;
-  color: #000;
 }
 main .career .list .item .text .wrap .date {
   font-size: 14px;
-  color: #000;
 }
 main .career .list .item .photo {
   width: 100%;
@@ -272,7 +386,6 @@ main .contact .block {
   padding: 2vw 1vw;
 }
 main .contact .block .email a {
-  color: #000;
   font-size: 3vw;
 }
 main .contact .link-list {
@@ -284,7 +397,6 @@ main .contact .link-list {
 }
 main .contact .link-list a {
   font-size: 14px;
-  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
