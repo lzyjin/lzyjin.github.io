@@ -18,10 +18,10 @@
   <!-- email.js -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/skill-progress.css">
-  <link rel="stylesheet" href="/css/typing.css">
-  <link rel="stylesheet" href="/css/item.css">
+  <link rel="stylesheet" href="/old/css/main.css">
+  <link rel="stylesheet" href="/old/css/skill-progress.css">
+  <link rel="stylesheet" href="/old/css/typing.css">
+  <link rel="stylesheet" href="/old/css/item.css">
 
 </head>
 
@@ -60,7 +60,7 @@
       <div class="profile-body">
         <div>
           <!-- <img src="/images/IMG_4260.JPG"> -->
-          <video src="/images/650976620.mp4" autoplay loop muted></video>
+          <video src="/old/images/650976620.mp4" autoplay loop muted></video>
         </div>
         <div>
           <div class="about-detail">
@@ -85,7 +85,7 @@
         </div>
       </div>
     </section>
-    
+
     <section id="skill">
       <h3>Skills</h3>
       <div class="skill-body">
@@ -136,7 +136,7 @@
       <h3>Portfolio</h3>
       <div class="work-body d-flex">
         <div class="work-item">
-          <img src="/images/eum-main.png" alt="">
+          <img src="/old/images/eum-main.png" alt="">
           <div class="detail">
             <div class="title">
               <h2><em>E_um</em>SNS기반 소셜종합플랫폼</h2>
@@ -148,7 +148,7 @@
           </div>
         </div>
         <div class="work-item">
-          <img src="/images/muji-main.png" alt="">
+          <img src="/old/images/muji-main.png" alt="">
           <div class="detail">
             <div class="title">
               <h2><em>MUJI</em>무인양품몰 메인페이지 리뉴얼</h2>
@@ -159,7 +159,7 @@
           </div>
         </div>
         <div class="work-item">
-					<img src="/images/cgv-main.png" alt="">
+					<img src="/old/images/cgv-main.png" alt="">
 					<div class="detail">
 						<div class="title">
 							<h2><em>CGV</em>CGV 메인페이지 리뉴얼</h2>
@@ -201,15 +201,15 @@
   <script>
     var typingFlag = false;
     var typingIdx = 0;
-    var typingTxt = $(".typing-txt").text(); // 타이핑될 텍스트 
+    var typingTxt = $(".typing-txt").text(); // 타이핑될 텍스트
 
-    typingTxt = typingTxt.split(""); // 한글자씩 자른다. 
+    typingTxt = typingTxt.split(""); // 한글자씩 자른다.
 
     var tyInt = setInterval(typing, 150);
 
     function typing() {
-      if (typingIdx < typingTxt.length) { // 타이핑될 텍스트 길이만큼 반복 
-        $(".typing").append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
+      if (typingIdx < typingTxt.length) { // 타이핑될 텍스트 길이만큼 반복
+        $(".typing").append(typingTxt[typingIdx]); // 한글자씩 이어준다.
         typingIdx++;
       } else {
         typingIdx = 0;
@@ -324,7 +324,7 @@ if ($("#contact").offset().top == 0) {
 });
 
 
-    // email.js 
+    // email.js
     (function () {
       emailjs.init("user_rQRCKatQTdMMrW64oSZ0X");
 
@@ -338,7 +338,7 @@ if ($("#contact").offset().top == 0) {
           message: $('textarea[name=message]').val()
         };
 
-        //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)       	
+        //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
         emailjs.send('service_dygsjhi', 'template_4vlduzn', templateParams).then(function (response) {
           console.log('SUCCESS!', response.status, response.text);
           alert("이메일이 전송되었습니다.");

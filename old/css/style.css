@@ -99,7 +99,7 @@ p.typing { font-size: 15px !important; color: #000; font-family: 'Nanum Gothic C
 .skill-item p span:nth-child(2) { float: right; }
 .progress { border: 2px solid rgb(96, 96, 96); padding: 10px; background-color: transparent; height: auto; }
 .progress-level { height: 13px; background: linear-gradient(to right, #c856e8, #de54b2); position: relative; /* animation: ani 1s; */ }
-.progress-level::after { content: ''; background: url(/images/purple-heart.png) no-repeat center center; background-size: cover; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); width: 25px; height: 25px; }
+.progress-level::after { content: ''; background: url(/old/images/purple-heart.png) no-repeat center center; background-size: cover; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); width: 25px; height: 25px; }
 @keyframes ani {
  0% { width: 0; }
  }
@@ -119,10 +119,10 @@ p.typing { font-size: 15px !important; color: #000; font-family: 'Nanum Gothic C
 .pi-btns span:nth-child(1) { width: 50%; height: 15px; }
 .pi-btns span:nth-child(2) { width: 30%; height: 15px; }
 .pi-img { width: 100%; height: 300px; cursor: pointer; }
-.pi1 .pi-img { background: url('/images/eum-main.png') no-repeat top center / cover; }
-.pi2 .pi-img { background: url('/images/muji-main.png') no-repeat top center / cover; }
-.pi3 .pi-img { background: url('/images/cgv-main.png') no-repeat top center / cover; }
-.pi4 .pi-img { background: url('/images/netflix-main.png') no-repeat top center / cover; }
+.pi1 .pi-img { background: url('/old/images/eum-main.png') no-repeat top center / cover; }
+.pi2 .pi-img { background: url('/old/images/muji-main.png') no-repeat top center / cover; }
+.pi3 .pi-img { background: url('/old/images/cgv-main.png') no-repeat top center / cover; }
+.pi4 .pi-img { background: url('/old/images/netflix-main.png') no-repeat top center / cover; }
 .pi-info { /* border: 1px solid blue; */
  font-size: 13px; margin-top: 20px; }
 .pi-info * { font-weight: 700; font-size: 12px; }
