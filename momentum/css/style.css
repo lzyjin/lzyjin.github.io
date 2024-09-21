@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Cafe24Meongi-W-v1.0';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-W-v1.0.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Meongi-B-v1.0';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Meongi-B-v1.0.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HakgyoansimDunggeunmisoTTF-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Cafe24Meongi-W-v1.0';
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    font-size: 10rem;
+}
+
+#greeting h1 {
+    font-family: 'Cafe24Meongi-B-v1.0';
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+#greeting input {
+    display: block;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-family: 'Cafe24Meongi-W-v1.0';
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+}
+
+#greeting input:focus {
+    outline: none;
+}
+
+#greeting input::placeholder {
+    color: #fff;
+}
+
+#background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+#todos {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#todos.hidden {
+    display: none;
+}
+
+#todoInput {
+    display: block;
+    font-size: 3em;
+    font-family: 'Cafe24Meongi-W-v1.0';
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+    color: #000;
+    margin: 0 auto;
+    flex-shrink: 0;
+    padding: 0.2em 0;
+}
+
+#todoInput::placeholder {
+    color: #000;
+}
+
+#todoInput:focus {
+    outline: none;
+}
+
+#todos ul {
+    margin: 30px auto 0;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    text-align: left;
+    list-style: none;
+}
+
+#todos li {
+    font-size: 2rem;
+    color: #000;
+    list-style: none;
+    position: relative;
+    padding-right: 0.8em;
+    margin-bottom: 0.5em;
+    width: fit-content;
+}
+
+#todos li .input-check {
+    cursor: pointer;
+    transform: translateY(-0.1em);
+    margin-right: 0.5em;
+}
+
+#todos li .input-check:checked+span {
+    text-decoration: line-through;
+}
+
+#todos li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#todos li:hover button {
+    display: block;
+}
+
+#quotes {
+
+}
+
+#quotes p {
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 2rem;
+    transition: transform .4s;
+}
+
+#quotes strong {
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 1.5rem;
+    opacity: 0;
+    font-family: 'Cafe24Meongi-B-v1.0';
+    transition: opacity .4s;
+}
+
+#quotes:hover p {
+    transform: translate(-50%, -2rem);
+}
+
+#quotes:hover strong {
+    opacity: 1;
+}
+
+#weather {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+#weather span {
+    font-size: 1.7rem;
+}
+
+#weather p {
+    font-size: 1.2rem;
+}
