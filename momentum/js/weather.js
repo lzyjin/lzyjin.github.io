@@ -14,8 +14,6 @@ navigator.geolocation.getCurrentPosition((position) => {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      console.log(data);
-
       weather.innerText = data.weather[0].main;
       temperature.innerText = `${data.main.temp}°C`;
       region.innerText = data.name;

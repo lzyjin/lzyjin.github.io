@@ -22,6 +22,8 @@ function paintGreetingTitle(username) {
   clock.classList.remove(HIDDEN_CLASS);
   const toDoContainer = document.querySelector("#todos");
   toDoContainer.classList.remove(HIDDEN_CLASS);
+  const quotes = document.querySelector("#quotes");
+  quotes.classList.remove(HIDDEN_CLASS);
 }
 
 if(savedUsername === null) {
